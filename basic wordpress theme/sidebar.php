@@ -1,10 +1,5 @@
 <div class="sidebar1">
-    <ul class="nav">
-      <li><a href="#">Link one</a></li>
-      <li><a href="#">Link two</a></li>
-      <li><a href="#">Link three</a></li>
-      <li><a href="#">Link four</a></li>
-    </ul>
+  <?php wp_nav_menu(array('menu_class'=>'nav')); ?>
 	<h2><?php _e('Categories'); ?></h2>
 	<ul>
 		<?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
