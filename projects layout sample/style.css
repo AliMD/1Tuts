@@ -7,3 +7,28 @@ div.container{
 	width:950px;
 	margin:0 auto;
 }
+
+div.header{
+	min-height:150px;
+}
+
+div.content{
+	min-height:150px;
+}
+
+div.banner{
+	min-height:150px;
+}
+
+div.panels{
+	min-height:150px;
+}
+
+div.bottom{
+	min-height:150px;
+}
+
+div.footer{
+	min-height:150px;
+}
+
