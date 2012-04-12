@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+div.container{
+	width:980px;
+	margin:0 auto;
+}
+
+div.banner{
+	width:980px;
+	height:570px;
+	overflow:hidden;
+	margin-top:20px;
+	position:relative;
+}
+
+div.banner div.scroll{
+	width:5000px; /* 5*980 (per img) */
+	height:534px;
+	position:absolute;
+	left:0;
+	top:0;
+	-webkit-transition:all 800ms;
+}
+
+div.banner div.scroll > div{
+	width:980px;
+	height:inherit;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+div.banner div.scroll > div.adv1{
+	background-color:hsl(0,35%,35%);
+	background-image:url(images/b1.jpg);
+}
+div.banner div.scroll > div.adv2{
+	background-color:hsl(60,35%,35%);
+	background-image:url(images/b2.jpg);
+}
+div.banner div.scroll > div.adv3{
+	background-color:hsl(120,35%,35%);
+	background-image:url(images/b3.jpg);
+}
+div.banner div.scroll > div.adv4{
+	background-color:hsl(180,35%,35%);
+	background-image:url(images/b4.jpg);
+}
+div.banner div.scroll > div.adv5{
+	background-color:hsl(240,35%,35%);
+	background-image:url(images/b5.jpg);
+}
+
+div.banner ul.btn{
+	list-style-type:none;
+	width:200px;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+div.banner ul.btn li{
+	float:left;
+	width:30px;
+	height:10px;
+	margin-right:5px;
+	background-color:#333;
+	cursor:pointer;
+	-webkit-transition:all 800ms;
+}
+
+div.banner ul.btn li:hover,
+div.banner ul.btn li.active{
+	background-color:#39D;
+	height:18px;
+	margin-top:-8px;
+	-webkit-transition-duration:400ms;
+}
