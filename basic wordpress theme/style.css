@@ -1,3 +1,17 @@
+/*
+Theme Name: mytheme!
+Theme URI: http://1schools.com/
+Description: The basic wp theme for my CIW programming class
+Author: ali.md
+Author URI: http://ali.md/
+Version: 1.0
+Tags: two-columns, fixed-width, custom-header, custom-background, rtl-language-support, jafang
+
+License:
+License URI:
+
+General comments (optional).
+*/
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	background: #4E5869;
@@ -76,46 +90,54 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 /* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
-ul.nav {
+div.nav ul {
 	list-style: none; /* this removes the list marker */
 	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
 	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
 }
-ul.nav li {
+div.nav ul li {
 	border-bottom: 1px solid #666; /* this creates the button separation */
 }
-ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+div.nav ul a, div.nav ul a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
 	padding: 5px 5px 5px 15px;
 	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
 	text-decoration: none;
 	background: #8090AB;
 	color: #000;
 }
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+div.nav ul a:hover, div.nav ul a:active, div.nav ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
 	background: #6F7D94;
 	color: #FFF;
 }
 
 /* ~~ The footer ~~ */
 .footer {
-	padding: 10px 0;
-	background: #6F7D94;
-	position: relative;/* this gives IE6 hasLayout to properly clear */
-	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	padding    : 10px 0;
+	background : #6F7D94;
+	position   : relative;/* this gives IE6 hasLayout to properly clear */
+	clear      : both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
 .fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 8px;
+	float       : right;
+	margin-left : 8px;
 }
 .fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 8px;
+	float        : left;
+	margin-right : 8px;
 }
 .clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
+	clear       :both;
+	height      :0;
+	font-size   : 1px;
+	line-height : 0px;
 }
+
+div.err{
+	color      : #411;
+	font-size  : 20px;
+	margin-top : 20px;
+	text-align :center;
+}
+

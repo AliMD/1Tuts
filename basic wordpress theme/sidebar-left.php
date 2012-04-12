@@ -1,5 +1,5 @@
 <div class="sidebar1">
-  <?php wp_nav_menu() ?>
+  <?php wp_nav_menu(array("menu_class"=>"nav")) ?>
 	<h2><?php _e('Categories'); ?></h2>
 	<ul>
 		<?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
