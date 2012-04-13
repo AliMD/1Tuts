@@ -1,5 +1,5 @@
 body{
-	background-image:url("images/back-gradient.jpg");
+	background-image:url("images/backgrandline.jpg");
 	background-repeat:repeat-x;
 	background-color:#f3f2de;
 }
@@ -9,20 +9,59 @@ div.container{
 }
 
 div.header{
-	min-height:150px;
+	min-height:210px;
 }
+
+
+div.header div.leftheader{
+	float:left;
+	min-height:200px;
+	width:300px;
+	
+}
+
+
+div.header div.rightheader{
+	width:auto;
+	min-height:200px;
+	margin-left:302px;	
+}
+
 
 div.content{
 	min-height:150px;
 }
 
 div.banner{
-	min-height:150px;
+	min-height:560px;
+	
 }
 
 div.panels{
-	min-height:150px;
+	min-height:400px;
 }
+
+
+div.panels div.leftpanel{
+	float:left;
+	min-height:400px;
+	width:200px;
+}
+
+div.panels div.centerpanel{
+	float:left;
+	min-height:400px;
+	width:200px;
+}
+
+
+div.panels div.rightpanel{
+	margin-left:402px;
+	min-height:400px;
+	width:200px;
+}
+
+
 
 div.bottom{
 	min-height:150px;
