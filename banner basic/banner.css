@@ -25,7 +25,10 @@ div.banner div.scroll{
 	position:absolute;
 	left:0;
 	top:0;
-	-webkit-transition:all 800ms;
+	-webkit-transition-property:all;
+	-webkit-transition-duration:2000ms;
+	-webkit-transition-timing-function:cubic-bezier(0,0.7,0.3,1);
+	
 }
 
 div.banner div.scroll > div{
