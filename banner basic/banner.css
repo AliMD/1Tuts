@@ -9,6 +9,7 @@
 div.container{
 	width:980px;
 	margin:0 auto;
+	padding-top:1px;
 }
 
 div.banner{

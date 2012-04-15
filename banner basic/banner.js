@@ -1,29 +1,29 @@
+var picWidth = 980,
+currentSlide = 0,
+divScrl, liBtns, picsLen, go2slide, nextSlide, prvSlide;
 
 window.onload=function(){
 	
-	var picWidth = 980;
+	divScrl = document.getElementsByClassName('banner').item(0).getElementsByClassName('scroll').item(0);
 	
-	var divScrl = document.getElementsByClassName('banner').item(0).getElementsByClassName('scroll').item(0);
+	liBtns = document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
 	
-	var liBtns=document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
-	
-	var picsLen = liBtns.length;
-	
-	var currentSlide = 0;
-	function go2slide(n){
+	picsLen = liBtns.length;
+
+	go2slide = function (n){
 		if(n>=picsLen) n=0;
 		if(n<0) n=picsLen-1;
 		
 		divScrl.style.left = -n*picWidth + 'px';
 		currentSlide=n;
-	}
+	};
 	
-	function nextSlide(){
+	nextSlide = function (){
 		go2slide(currentSlide+1)
-	}
-	function prvSlide(){
+	};
+	prvSlide = function (){
 		go2slide(currentSlide-1)
-	}
+	};
 
 	for(var i=0;i<picsLen;i++){
 		(function(j){
@@ -32,8 +32,5 @@ window.onload=function(){
 			}
 		})(i);
 	}
-	
-	document.getElementById('next').onclick=nextSlide; //test
-	document.getElementById('prv').onclick=prvSlide;
 	
 }
