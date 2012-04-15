@@ -7,11 +7,14 @@ window.onload=function(){
 	
 	var liBtns=document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
 	
+	function go2slide(n){
+		divScrl.style.left = -n*picWidth + 'px';
+	}
+	
 	for(var i=0;i<liBtns.length;i++){
-		(function(index){
-			liBtns.item(index).onclick=function(){
-				alert(index);
-				divScrl.style.left = -index*picWidth + 'px';
+		(function(j){
+			liBtns.item(j).onclick=function(){
+				go2slide(j);
 			}
 		})(i);
 	}
