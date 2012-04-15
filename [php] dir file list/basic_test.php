@@ -1,31 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<style type="text/css">
-div.gallery{
-	margin-left:50px;
-}
-div.gallery img{
-	display:block;
-	margin-top:10px;
-}
-</style>
+	<meta charset="utf-8" />
+	<title>oontitle document</title>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		div.container{
+			width:950px;
+			margin:0 auto;
+		}
+		div.gallery{
+			margin-left: 20px;
+		}
+		div.gallery img{
+			display: block;
+			margin-top: 5px;
+		}
+	</style>
 </head>
-
 <body>
-<div class="gallery">
-<?php
+<div class="container">
+	<div class="gallery">
+	<?php
+		
+		$dir = './images';
+		$allowed_type = array('jpg','jpeg','png','gif');
 
-$d = dir("./images");
+		$d = dir($dir);
+		while( $f = $d->read() ){
+			$ftype = end(explode('.', $f));
+			if( !in_array( strtolower($ftype),$allowed_type) ) continue;
+			echo "<img src='$dir/$f' />";
+		}
 
-while($f = $d->read()){
-	if( strtolower(substr($f,-4)) != '.jpg' ) continue;
-	echo "<img src='images/$f' />";
-}
-
-?>
+	?>
+	</div>
 </div>
 </body>
 </html>
