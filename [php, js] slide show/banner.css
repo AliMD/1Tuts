@@ -14,7 +14,7 @@ div.container{
 
 div.banner{
 	width:980px;
-	height:570px;
+	height:575px;
 	overflow:hidden;
 	margin-top:20px;
 	position:relative;
@@ -41,6 +41,7 @@ div.banner div.scroll > div{
 div.banner ul.btn{
 	list-style-type:none;
 	width:200px;
+	height:16px;
 	position:absolute;
 	right:0;
 	bottom:0;
@@ -53,14 +54,14 @@ div.banner ul.btn li{
 	margin-right:5px;
 	background-color:#333;
 	cursor:pointer;
-	-webkit-transition:all 800ms;
+	-webkit-transition:all 1000ms;
 }
 
 div.banner ul.btn li:hover,
 div.banner ul.btn li.active{
 	background-color:#39D;
-	height:18px;
-	margin-top:-8px;
-	-webkit-transition-duration:400ms;
+	height:22px;
+	margin-top:-6px;
+	-webkit-transition-duration:300ms;
 }
 
