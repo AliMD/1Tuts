@@ -11,14 +11,24 @@
 	<div class="banner">
     	<div class="scroll">
 			<?php
-				// dir
-				//while
-					// echo <div><img src='?' /></div>
+			
+				$dir = './images/banner1';
+				$allowed_type = array('jpg','jpeg','png','gif');
+		
+				$d = dir($dir);
+				$pics_len=0;
+				while( $f = $d->read() ){
+					$file_type = end(explode('.',$f));
+					if( !in_array(strtolower($file_type),$allowed_type) ) continue;
+					echo "<div><img src='$dir/$f' /></div>";
+					$pics_len ++;
+				}
+		
 			?>
         </div>
         <ul class="btn">
         	<?php
-				// be tedad img ha li besazid !
+				for($i=0;$i<$pics_len;$i++) echo '<li></li>';
 			?>
         </ul>
         
