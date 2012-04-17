@@ -1,1 +1,6 @@
 /* Somthing else */
+
+div.container div{
+	border : 1px dashed #411;
+	min-height:100px;
+}
