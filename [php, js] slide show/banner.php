@@ -33,6 +33,7 @@
         </ul>
         
     </div>
+    <!-- ye back o next khoshkel besazin digeeeeeeeeeeeee ! -->
     <input type="button" value="back" onclick="prvSlide()" />
     <input type="button" value="next" onclick="nextSlide()" />
 </div>

@@ -21,7 +21,6 @@ div.banner{
 }
 
 div.banner div.scroll{
-	width:5000px; /* 5*980 (per img) */
 	height:534px;
 	position:absolute;
 	left:0;
@@ -40,21 +39,25 @@ div.banner div.scroll > div{
 
 div.banner ul.btn{
 	list-style-type:none;
-	width:200px;
 	height:16px;
 	position:absolute;
 	right:0;
+	left:0;
 	bottom:0;
+	margin:0 auto;
 }
 
 div.banner ul.btn li{
 	float:left;
 	width:30px;
 	height:10px;
-	margin-right:5px;
+	margin-left:5px;
 	background-color:#333;
 	cursor:pointer;
 	-webkit-transition:all 1000ms;
+}
+div.banner ul.btn li:first-child{
+	margin-left:0;
 }
 
 div.banner ul.btn li:hover,

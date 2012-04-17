@@ -1,14 +1,18 @@
 var picWidth = 980,
 currentSlide = 0,
-divScrl, liBtns, picsLen, go2slide, nextSlide, prvSlide;
+divScrl, ulBtns, liBtns, picsLen, go2slide, nextSlide, prvSlide;
 
 window.onload=function(){
 	
 	divScrl = document.getElementsByClassName('banner').item(0).getElementsByClassName('scroll').item(0);
 	
-	liBtns = document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
+	ulBtns = document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0);
+	liBtns = ulBtns.getElementsByTagName('li');
 	
 	picsLen = liBtns.length;
+	
+	divScrl.style.width = (picsLen*picWidth+100) +'px';
+	ulBtns.style.width = (35*picsLen+5) +'px'; // 35 = li width + li margin right (style.css)
 
 	go2slide = function (n){
 		if(n>=picsLen) n=0;
