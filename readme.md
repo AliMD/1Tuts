@@ -12,7 +12,7 @@ Please **help each other** to learn better by answer questions and describe abou
 
 If you want to use git with command-line like me, remember [ali.md/help/git](http://ali.md/help/git)
 
-If you **do not have** enough iq (over **60**) and/or hate type command you need a graphical client for git like [ali.md/smartgit](http://ali.md/smartgit)
+If you **do not have** enough iq (over **65**) and/or hate type command you need a graphical client for git like [ali.md/smartgit](http://ali.md/smartgit)
 
 **SmartGit** is a graphical client for the Open Source version control systems **Git**, **Mercurial** and **SVN**. It runs on Windows, Mac OS X and Linux.
 
