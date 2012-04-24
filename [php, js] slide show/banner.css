@@ -54,6 +54,7 @@ div.banner ul.btn li{
 	margin-left:5px;
 	background-color:#333;
 	cursor:pointer;
+	border-radius:5px;
 	-webkit-transition:all 1000ms;
 }
 div.banner ul.btn li:first-child{
@@ -63,8 +64,8 @@ div.banner ul.btn li:first-child{
 div.banner ul.btn li:hover,
 div.banner ul.btn li.active{
 	background-color:#39D;
-	height:22px;
-	margin-top:-6px;
+	height:16px;
+	margin-top:-2px;
 	-webkit-transition-duration:300ms;
 }
 

@@ -1,5 +1,8 @@
 var picWidth = 980,
 currentSlide = 0,
+lastSlide = 0,
+autoPlayDelay = 5000,
+autoPlayTimer,
 divScrl, ulBtns, liBtns, picsLen, go2slide, nextSlide, prvSlide;
 
 window.onload=function(){
@@ -19,7 +22,12 @@ window.onload=function(){
 		if(n<0) n=picsLen-1;
 		
 		divScrl.style.left = -n*picWidth + 'px';
+
+		lastSlide=currentSlide;
 		currentSlide=n;
+
+		liBtns.item(lastSlide).className=''; // clear last li class (remove active)
+		liBtns.item(currentSlide).className='active'; // swap active class to current li (slide)
 	};
 	
 	nextSlide = function (){
@@ -36,7 +44,11 @@ window.onload=function(){
 			}
 		})(i);
 	}
-	
-	setInterval(nextSlide,5000);
+
+	(autoPlayFn = function(){
+		if(autoPlayTimer) nextSlide(); // skip 1 timer step
+		 else go2slide(currentSlide); //set active li and init setting for init slide.
+		autoPlayTimer = setTimeout(autoPlayFn,autoPlayDelay);
+	})();// run for start timer (autoPlayTimer is false then skip nextSlide in form load)
 	
 }
