@@ -1,1 +1,2 @@
-descriptions 3<br/>and more bla bla bla
+<h3>Title 3</h3>
+<p>and more more bla bla bla bla ...</p>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Nixy Banner</title>
+<title>Slide Show Banner</title>
 <link type="text/css" rel="stylesheet" href="banner.css" />
 <script type="text/javascript" src="banner.js" ></script>
 </head>
@@ -28,11 +28,12 @@
 					//$desc_text = file_exists($desc_path) ? file_get_contents($desc_path) : ""; // remove for dummies
 					if( file_exists($desc_path) ){
 						$desc_text = file_get_contents($desc_path);
+						$desc_html = "<div class='desc'>$desc_text</div>"; // div.desc have padding and visible even its free.
 					}else{
-						$desc_text = "";
+						$desc_html = "";
 					}
 
-					echo "<div><div class='desc'>$desc_text</div><img src='$dir/$f' /></div>";
+					echo "<div>$desc_html<img src='$dir/$f' /></div>";
 					$pics_len ++;
 				}
 		
