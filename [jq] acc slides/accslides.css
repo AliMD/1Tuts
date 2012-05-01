@@ -2,19 +2,23 @@
 /* Acc Slide Section
 -------------------------------------------------- */
 div.accslides{
-	width:600px;
-	overflow:hidden;
-	margin: 0 auto;
+	width    : 600px;
+	overflow : hidden;
+	margin   : 0 auto;
 }
 
 div.accslides .train{
-	width:700px;
+	width : 700px;
 }
 
 div.accslides .train > div{
-	width:150px;
-	overflow: hidden;
-	float: left;
+	width    : 150px;
+	overflow : hidden;
+	float    : left;
+	cursor   : pointer;
 	/* auto height by img */
 }
 
+div.accslides .train > div > img{
+	display: block;
+}
