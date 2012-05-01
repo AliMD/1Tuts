@@ -11,14 +11,27 @@ div.accslides .train{
 	width : 700px;
 }
 
-div.accslides .train > div{
+div.accslides .train > div{ /* > is important */
 	width    : 150px;
 	overflow : hidden;
 	float    : left;
 	cursor   : pointer;
+	position : relative;
 	/* auto height by img */
 }
 
 div.accslides .train > div > img{
-	display: block;
+	display  : block;
+	position : absolute;
+	left     : 0;
+	top      : 0;
+	z-index  : -1;
+}
+
+div.accslides .train div.text{
+	
+}
+
+div.accslides .train div.text .title{
+	
 }
