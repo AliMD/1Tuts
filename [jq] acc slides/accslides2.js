@@ -14,12 +14,8 @@ $(function(){
 
 	openSlide(0,500);
 
-
 	slides.click(function(){
-		openSlide( slides.index(this) ,700); // jq.index: http://api.jquery.com/index/
-
+		openSlide( slides.index(this) ,700); // jq.index: ali.md/jq/index
 	});
-
-	
 
 });
