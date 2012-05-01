@@ -2,6 +2,8 @@ $(function(){
 
 	var slides = $('.accslides .train > div');
 
+	slides.last().css({"padding-right":"200px"}); // when mouse moves fast !
+
 	slides.mouseover(function(){
 		
 		slides.stop().animate({

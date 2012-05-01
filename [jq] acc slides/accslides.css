@@ -1,3 +1,7 @@
+body{
+	background-color : black;
+	color: white;
+}
 
 /* Acc Slide Section
 -------------------------------------------------- */
@@ -8,7 +12,7 @@ div.accslides{
 }
 
 div.accslides .train{
-	width : 700px;
+	width : 900px; /* 4x150 +200(lastPadd) +100(havijoori) */
 }
 
 div.accslides .train > div{
