@@ -2,27 +2,24 @@ $(function(){
 
 	var slides = $('.accslides .train > div');
 
+	window.openSlide = function (slideIndex, duration){ // globalize 
+		slides.stop().animate({
+			'width':'50px'
+		},duration);
 
-	slides.stop().animate({
-		'width':'50px'
-	},700);
+		slides.eq(slideIndex).stop().animate({
+			'width':'450px'
+		},duration);
+	}
 
-	slides.eq(0).stop().animate({
-		'width':'450px'
-	},700);
+	openSlide(0,500);
 
 
 	slides.click(function(){
-		
-		slides.stop().animate({
-			'width':'50px'
-		},700);
-
-		$(this).stop().animate({
-			'width':'450px'
-		},700);
+		openSlide( slides.index(this) ,700); // jq.index: http://api.jquery.com/index/
 
 	});
 
-});
+	
 
+});
