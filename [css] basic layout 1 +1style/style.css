@@ -1,0 +1,19 @@
+div{
+	outline:1px dashed red;
+	min-height:100px;
+}
+
+body{
+	padding-top: 20px;
+	background-color: #f2f2f2;
+}
+
+div.container{
+	/* guid for layout */
+	background-image  : url('images/backguid.jpg');
+	background-repeat : no-repeat;
+}
+
+div.pic{
+	/* add back img ... */
+}
