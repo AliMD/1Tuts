@@ -34,8 +34,32 @@ div.accslides .train > div > img{
 
 div.accslides .train div.text{
 	width : 450px;
+	font-family: Arial, "MS Trebuchet", sans-serif;
 }
 
 div.accslides .train div.text .title{
-	
+	color      : #fff;
+	height     : 40px; /* width (after 90deg rotate)*/
+	width      : 280px; /* height */
+	background : rgba(0,0,0,0.5);
+
+	position: absolute;
+	left:0;
+	top:0;
+
+	text-align:right;
+	font-weight:normal;
+	padding-right: 20px; /* top */
+	padding-top: 10px; /* left */
+
+	-webkit-transform-origin:left top;
+	-webkit-transform:translateY(300px) rotate(-90deg);
+}
+
+div.accslides .train div.text .desc{
+	padding:15px;
+	padding-left: 60px;
+	font-size:16px;
+	text-shadow:0 0 1px white;
+
 }
