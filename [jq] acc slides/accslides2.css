@@ -1,14 +1,17 @@
 
 /* Acc Slide Section
 -------------------------------------------------- */
+
 div.accslides{
 	width    : 600px;
+	height   : 300px;
 	overflow : hidden;
 	margin   : 0 auto;
 }
 
 div.accslides .train{
-	width : 700px;
+	width  : 700px;
+	height : inherit;
 }
 
 div.accslides .train > div{ /* > is important */
@@ -17,6 +20,7 @@ div.accslides .train > div{ /* > is important */
 	float    : left;
 	cursor   : pointer;
 	position : relative;
+	height   : inherit;
 	/* auto height by img */
 }
 
@@ -29,7 +33,7 @@ div.accslides .train > div > img{
 }
 
 div.accslides .train div.text{
-	
+	width : 450px;
 }
 
 div.accslides .train div.text .title{
