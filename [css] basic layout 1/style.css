@@ -1,0 +1,93 @@
+
+*{
+	padding : 0;
+	margin  : 0;
+}
+
+div{
+	outline:1px dashed red;
+}
+
+body{
+	padding-top: 20px;
+	background-color: #f2f2f2;
+}
+
+div.container{
+	width : 950px;
+	margin: 0 auto;
+
+	/* guid for layout */
+	background-image  : url('images/backguid.jpg');
+	background-repeat : no-repeat;
+}
+
+div.left{
+	float: left;
+}
+
+div.right{
+	float: right;
+}
+
+div.clear{
+	clear: both;
+	width:0 !important;
+	height:0 !important;
+	min-height:0 !important;
+	min-width:0 !important;
+	overflow: hidden;
+
+}
+
+div.header{
+	padding: 1px; /* ZedLoos v1.0j */
+
+}
+div.content{
+	min-height:525px;
+
+	
+}
+div.footer{
+	min-height:200px;
+	padding: 1px;
+}
+
+div.header div.left{
+	width:370px;
+	min-height:70px;
+	margin-top:35px;
+}
+
+div.header div.right{
+	width:370px;
+	min-height:70px;
+	margin-top:35px;
+}
+
+div.header div.logo{
+	margin:10px 375px;
+	min-height:120px;
+}
+
+div.content div.textpanel{
+	min-height:500px;
+	margin-right: 405px;
+}
+
+div.content div.right{
+	width:400px;
+	min-height:500px;
+}
+
+div.footer div.image{
+	min-height:70px;
+	margin-top:25px;
+}
+div.footer div.fmenu{
+	min-height:50px;
+}
+div.footer div.copyright{
+	min-height:55px;
+}
