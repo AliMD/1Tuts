@@ -9,32 +9,33 @@
 <div class="uploaded">
 <?php
 
-function upload(){
+function upload_img($dir_path, $size_limit){
 
 	$file = $_FILES['myfile'];
+	$size_limit *=1024; // to KB
 
 	if( $file['error'] !== 0 ){
 		echo 'Error in uploading.';
 		return false;
 	}
 
-	if( $file['type'] != 'image/jpeg' ){
+	if( substr($file['type'],0,6) != 'image/' ){
 		echo 'Error in file type.';
 		return false;
 	}
 
-	if( $file['size'] > 200*1024 ){
+	if( $file['size'] > $size_limit ){
 		echo 'Error in file size.';
 		return false;
 	}
 
-	$file_path = './uploaded/'.$file['name'];
-	move_uploaded_file($file['tmp_name'],$file_path );
+	$file_path = "$dir_path/$file[name]"; // "" baraye name dige lazem nist chon kolan too "" hastesh
+ 	move_uploaded_file ($file['tmp_name'], $file_path);
 
 	return $file_path;
 }
 
-$img = upload();
+$img = upload('./uploaded',200);
 
 if($img) echo "Path : $img <br /> <img src='$img' width='300' />";
 
