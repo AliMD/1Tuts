@@ -11,23 +11,25 @@
 
 function upload(){
 
-	if( $_FILES['myfile']['error'] !== 0 ){
+	$file = $_FILES['myfile'];
+
+	if( $file['error'] !== 0 ){
 		echo 'Error in uploading.';
 		return false;
 	}
 
-	if( $_FILES['myfile']['type'] != 'image/jpeg' ){
+	if( $file['type'] != 'image/jpeg' ){
 		echo 'Error in file type.';
 		return false;
 	}
 
-	if( $_FILES['myfile']['size'] > 200*1024 ){
+	if( $file['size'] > 200*1024 ){
 		echo 'Error in file size.';
 		return false;
 	}
 
-	$file_path = './uploaded/'.$_FILES['myfile']['name'];
-	move_uploaded_file($_FILES['myfile']['tmp_name'],$file_path );
+	$file_path = './uploaded/'.$file['name'];
+	move_uploaded_file($file['tmp_name'],$file_path );
 
 	return $file_path;
 }
