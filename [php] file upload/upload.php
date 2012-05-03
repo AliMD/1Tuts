@@ -26,13 +26,16 @@ function upload(){
 		return false;
 	}
 
-	move_uploaded_file($_FILES['myfile']['tmp_name'], './uploaded/'.$_FILES['myfile']['name']);
+	$file_path = './uploaded/'.$_FILES['myfile']['name'];
+	move_uploaded_file($_FILES['myfile']['tmp_name'],$file_path );
 
-	echo 'uploaded';
-
+	return $file_path;
 }
 
-upload();
+$img = upload();
+
+if($img) echo "Path : $img <br /> <img src='$img' width='300' />";
+
 
 ?>
 </div>
