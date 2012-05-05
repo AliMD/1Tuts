@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+*{
+	padding:0;
+	margin:0;
+	-webkit-transition:all 8s;
+}
+
+body{
+	background-color:black;
+}
+
+div.box{
+	background-color:yellow;
+	width:400px;
+	height:400px;
+	margin:50px auto 0;
+	border-radius:800px;
+}
+
+div.one{
+	background-color:yellow;
+	width:400px;
+	height:400px;
+	margin:50px auto 0;
+	border-radius:800px;
+}
+
+div.two{
+	background-color:yellow;
+	width:400px;
+	height:400px;
+	margin:50px auto 0;
+	border-radius:800px;
+}
+body.preload div.box{
+	-webkit-border-radius:1px;
+	-webkit-transform: rotate(3600deg) translate(-500px,-500px);
+	background-color:darkmagenta;
+	
+}
+
+</style>
+<script type="text/javascript">
+
+window.onload=function(){
+	document.body.className = '';
+}
+
+</script>
+</head>
+
+<body class="preload">
+
+<div class="box"></div>
+
+</body>
+</html>
