@@ -1,0 +1,46 @@
+body {
+	background-color : black;
+	color: white;
+}
+
+/* Acc Slide Section
+-------------------------------------------------- */
+div.accslides {
+	width    : 600px;
+	margin   : 0 auto;
+	overflow : hidden;
+}
+
+div.accslides .train{
+	width : 1000px;
+}
+
+div.accslides .train > div {
+	float    : left;
+	width    : 150px;
+	overflow : hidden;
+}
+
+div.accslides .train > div:last-child {
+	padding-right : 300px;
+}
+
+div.accslides .train > div > img {
+	
+}
+
+
+/* Acc Slide css animation (no js)
+-------------------------------------------------- */
+
+div.accslides .train > div {
+	-webkit-transition : width 700ms; /* u can move to line 21 */
+}
+
+div.accslides:hover .train > div {
+	width    : 50px;
+}
+
+div.accslides .train > div:hover {
+	width    : 450px;
+}

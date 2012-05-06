@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* browser reset */
+
+@media all {
+
+/* Global reset of paddings and margins for all HTML elements */
+* {
+	margin:0;
+	padding:0;
+}
+
+/* Correction:margin/padding reset caused too small select boxes. */
+option {
+	padding-left:0.4em;
+} /* LTR */
+
+select {
+	padding:1px;
+}
+
+/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+* html body * {
+	overflow:visible;
+}
+
+body {
+	font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+	background:#fff;
+	color:#000;
+	text-align:left; /* LTR */
+}
+
+/* avoid visible outlines on DIV containers in Webkit browsers */
+div {
+	outline:0 none;
+}
+
+/* HTML 5 - adjusting visual formatting model to block level */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+
+/* Clear borders for <fieldset> and <img> elements */
+fieldset, img {
+	border:0 solid;
+}
+
+/* Clear borders/outline for links when you click */
+a:active, a:href {
+ border:0 none;
+ outline:0 none;
+}
+
+}
+
+@media print {
+
+.noprint {
+	display:none !important;
+}
+
+}
