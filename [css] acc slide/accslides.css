@@ -26,7 +26,7 @@ div.accslides .train > div:last-child {
 }
 
 div.accslides .train > div > img {
-	
+	display: block;
 }
 
 
