@@ -42,14 +42,14 @@ div.slideshow .train > div > img{
 
 div.slideshow ul.btns{
 	list-style-type : none;
-	margin-top:15px;
+	margin-top:10px;
 }
 
 div.slideshow li{
-	width:30px;
-	height:12px;
+	width:25px;
+	height:10px;
 	background-color:#333;
-	border-radius:0%;
+	border-radius:10%;
 	float: left;
 	margin-right:5px;
 	-webkit-transition : all 800ms;
@@ -57,7 +57,7 @@ div.slideshow li{
 
 div.slideshow li:hover{
 	background-color:#39D;
-	height: 18px;
+	height: 16px;
 	margin-top:-3px;
 	-webkit-transition : all 200ms;
 }
