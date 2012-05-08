@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.box{
+	transition:all 1s;
+	border-radius:5px;
+	-webkit-transition:all 1s;
+	-webkit-border-radius:5px;
+	-moz-transition:all 1s;
+	-moz-border-radius:5px;
+	-o-transition:all 1s;
+	-o-border-radius:5px;
+	-ms-transition:all 1s;
+	-ms-border-radius:5px;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+for (var i=0;i<150;i++){
+	document.write('<div class="box"></div>');
+}
+
+function rnd(a,b){
+	return Math.floor(Math.random()*(b-a+1))+a;
+}
+	
+function randColor(){
+	var c='#';
+	for(var i=0;i<6;i++){
+		c+=rnd(0,15).toString(16);
+	}
+	return c;
+}
+var divs = document.getElementsByClassName('box');
+
+(show = function (){
+	for (var stl=0;stl<divs.length;stl++){
+		divs.item(stl).style.position='absolute';
+		divs.item(stl).style.backgroundColor=randColor();
+		divs.item(stl).style.height=rnd(5,25)+'px';
+		divs.item(stl).style.width=rnd(5,25)+'px';
+		divs.item(stl).style.top=rnd(5,95)+'%';
+		divs.item(stl).style.left=rnd(5,95)+'%';
+	}
+	
+})();
+
+setInterval(show,1000);
+</script>
+</body>
+</html>

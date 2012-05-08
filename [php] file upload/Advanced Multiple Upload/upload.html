@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Multiple uploading form</title>
+</head>
+<body>
+<h1>Upload Form</h1>
+<form action="upload.php" method="post" enctype="multipart/form-data" >
+	<input type="file" name="myfile[]" /><br>
+	<input type="file" name="myfile[]" /><br>
+	<input type="file" name="myfile[]" /><br>
+	<!-- MORE AND MORE -->
+	<input type="submit" name="submit" value="Upload" />
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="txt"></p>
+<script type="text/javascript">
+	var year=prompt("Enter yaer",1990);
+	var month=prompt("Enter month",2);
+	var day=prompt("Enter day",28);
+	function time(){
+	var birthday = new Date(year,month-1,day);
+	var now = new Date();
+	var age = now.valueOf()- birthday.valueOf();
+	
+	var now2 = new Date(age);
+	document.getElementById("txt").innerHTML= now2.getFullYear()-1970
+	+"years " + now2.getMonth() +"months " + now2.getDate()+"Day "+ now2.getHours()+"hours " + now2.getMinutes() + "minutes " + now.getSeconds() + "seconds ";
+}
+setInterval(time,50);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.frm{
+	width:170px;
+	margin:40px auto 0;
+}
+div.frm input[type=text]{
+	width:35px;
+}
+
+div.frm input.nok[type=text]{
+	background-color:#FCCECD;
+}
+
+div.frm input.ok[type=text]{
+	background-color:#CEFCCD;
+}
+
+
+table.mult{
+	margin:30px auto 20px;
+}
+
+div.link{
+	text-align:center;
+}

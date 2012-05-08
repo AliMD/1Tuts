@@ -35,7 +35,7 @@ function upload_img($dir_path, $size_limit){
 	return $file_path;
 }
 
-$img = upload('./uploaded',200);
+$img = upload_img('./uploaded',200);
 
 if($img) echo "Path : $img <br /> <img src='$img' width='300' />";
 
