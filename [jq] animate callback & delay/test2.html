@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Oontitled Document</title>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	div.container{
+		width  :950px;
+		margin :0 auto;
+	}
+	div.box > div{
+		width  :100px;
+		height :100px;
+		background-color :darkmagenta;
+		margin-bottom:10px;
+	}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$('div.box1').animate({'margin-left':'400px'},1000,null,function(){
+
+		$('div.box2').animate({'margin-left':'400px'},1000,null,function(){
+
+			$('div.box3').animate({'margin-left':'400px'},1000);
+
+		});
+
+	});
+});
+
+</script>
+
+</head>
+<body>
+<div class="container">
+	<div class="box">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+</div>
+</body>
+</html>

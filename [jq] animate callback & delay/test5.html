@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Oontitled Document</title>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	div.container{
+		width  :950px;
+		margin :0 auto;
+	}
+	div.box > div{
+		width  :50px;
+		height :50px;
+		background-color :darkmagenta;
+		margin-bottom:5px;
+	}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	var dly = 0;
+	$('div.box > div').each(function(){
+		$(this).delay(dly+=150).animate({'margin-left':'400px'},1000);
+	});	
+});
+
+</script>
+
+</head>
+<body>
+<div class="container">
+	<div class="box">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+</body>
+</html>
