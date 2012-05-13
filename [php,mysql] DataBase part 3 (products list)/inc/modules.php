@@ -1,5 +1,7 @@
 <?php
 
+require_once('inc/db.php');
+
 function show_array($arr){
 	echo '<pre>';
 	print_r($arr);
