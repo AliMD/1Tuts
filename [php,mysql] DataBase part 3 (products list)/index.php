@@ -13,7 +13,7 @@ db_connect();
 
 $books = db_getrows('products');
 
-show_array($books);
+show_books($books);
 
 db_close();
 

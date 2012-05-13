@@ -53,4 +53,20 @@ function show_users($rows){
 }
 
 
+function show_books($books){
+	foreach($books as $book){
+		echo "
+		<div class='book'>
+			<h2 class='title'>$book[name]</h2>
+			<img class='pic' src='images/$book[img]' alt='$book[name]' />
+			<div class='text'>
+				<span class='author'>Author : $book[author]</span>
+				$book[desc]
+				<span class='price'>$book[price] $</span>
+			</div>
+			<div class='clear'></div>
+		</div>
+		";
+	}
 
+}
