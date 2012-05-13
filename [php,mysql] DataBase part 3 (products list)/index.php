@@ -1,5 +1,5 @@
 <?php
-	require_once('inc/db.php');
+	require_once('inc/modules.php');
 
 	include('inc/header.php');
 ?>
