@@ -9,7 +9,13 @@
 	<h1>Book List</h1>
 <?php
 
-db_connect();	
+db_connect();
+
+$books = db_getrows('products');
+
+show_array($books);
+
+db_close();
 
 ?>
 </div>
