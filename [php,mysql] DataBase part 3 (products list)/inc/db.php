@@ -1,13 +1,8 @@
 <?php
 
-/*
-$db['server'] = 'localhost';
-$db['user'] = 'root';
-*/
-
 $db = array(
 	'con' => '',
-	'name'   => 'mydb',
+	'name'   => 'ciw_database',
 	'server' => 'localhost',
 	'user'   => 'root',
 	'pass'   => ''
