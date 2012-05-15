@@ -1,0 +1,16 @@
+
+install wordpress
+
+delete posts
+
+Permalink
+
+user setting
+
+add theme (index.php, style.css)
+
+add comment to style.css
+
+active theme in wp-admin
+
+layout
