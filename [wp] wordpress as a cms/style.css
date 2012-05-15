@@ -1,0 +1,44 @@
+/*
+Theme Name: Wordpress CMS
+Theme URI: http://ali.md/
+Description: basic theme for use wordpress as a cms.
+Author: Ali.MD
+Version: 1
+*/
+
+html, body{
+	height : 100%;
+}
+
+body{
+	background-image    : url('images/background.jpg');
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	background-position : center top;
+}
+
+div{
+	outline : 1px dashed white;
+}
+
+div.container-top{
+	padding : 10px 0px;
+}
+
+div.toptooltip{
+	margin-right : 10px;
+	background   : #ffd62c;
+	padding      : 5px 8px;
+}
+
+div.container-menu > div{
+	min-height : 100px;
+}
+
+div.logo h1{
+	width       : 134px;
+	height      : 39px;
+	background  : url('images/logo.jpg') no-repeat;
+	text-indent : 1000px;
+	overflow    : hidden;
+}
