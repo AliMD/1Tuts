@@ -1,0 +1,48 @@
+div{
+	outline:1px dashed white;
+}
+
+body{
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+div.backimage{
+	position : fixed;
+	left     : 0;
+	right    : 0;
+	top      : 0;
+	bottom   : 0;
+	z-index:-1;
+	background-image    : url('images/background.jpg');
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	background-position : center top;
+}
+
+div.container-tooltip{
+	padding: 10px 0px;
+}
+
+div.tooltip{
+	background-color: #ffd62c;
+	font-size:13px;
+	padding: 6px 4px;
+	margin-right:20px;
+}
+
+div.container-header{
+	padding: 10px 15px;
+}
+
+div.container-header .logo{
+	
+}
+
+div.container-header .logo h1{
+	width:148px;
+	height:47px;
+	background-image: url('images/scope_logo.jpg');
+	background-size:100% 100%;
+	text-indent:1000px;
+	overflow: hidden;
+}
