@@ -5,6 +5,11 @@ Description: basic theme for use wordpress as a cms.
 Author: Ali.MD
 Version: 1
 */
+
+
+/* Global Layout
+-------------------------------------------------- */
+
 div{
 	outline : 1px dashed white;
 }
@@ -22,9 +27,12 @@ div.backimage{
 	background-size     : cover;
 	background-position : center top;
 }
+
 div.container{
-	padding-top: 20px;
+	padding-top : 20px;
+	font-family : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 div.container-top{
 	padding : 10px 0px;
 }
@@ -36,7 +44,7 @@ div.toptooltip{
 }
 
 div.container-menu{
-	padding: 10px 15px;
+	padding : 10px 15px;
 	background-color: #fff;
 }
 
@@ -50,3 +58,56 @@ div.logo h1{
 	background-size  : 100% 100%;
 }
 
+div.container-contents{
+	margin-top : 10px;
+	padding    : 15px;
+	background-color: #fff;
+}
+
+div.content div.post h2{
+	font-size:24px;
+	margin-bottom:15px;
+}
+
+div.container-widgets{
+	min-height       : 250px;
+	margin-top       : 10px;
+	background-color : #222;
+}
+
+div.container-footer{
+	min-height : 50px;
+	margin-top : 10px;
+}
+
+
+/* Menu
+-------------------------------------------------- */
+
+div.topmenu{
+	padding-top : 10px;
+}
+
+div.topmenu > ul{ 
+
+}
+
+div.topmenu li{
+	float    : right; /* mastmal! */
+	position : relative;
+}
+
+div.topmenu a{
+	padding : 12px;
+	display : block;
+	color   : #b2b2b6;
+	
+	font-size       : 13px;
+	text-transform  : capitalize;
+	text-decoration : none;
+	font-weight     : bold;
+}
+
+div.topmenu li:hover a{
+	color : #222;
+}
