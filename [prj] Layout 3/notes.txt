@@ -1,0 +1,17 @@
+for dears waf's :tr
+25/2/1391
+
+reset
+
+quotes (http://www.w3schools.com/cssref/pr_gen_quotes.asp)
+
+befor, after (http://www.w3schools.com/css/css_pseudo_elements.asp)
+
+css @ : command, not a selector
+	@charset
+	@media (http://www.w3schools.com/css/css_mediatypes.asp)
+
+.noprint
+
+ali.md/csszip Compress css for save server bandwidth (speed for iranian)
+
