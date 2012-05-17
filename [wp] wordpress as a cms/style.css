@@ -93,7 +93,7 @@ div.topmenu > ul{
 }
 
 div.topmenu li{
-	float    : right; /* mastmal! */
+	float    : left; /* mastmal! */
 	position : relative;
 }
 

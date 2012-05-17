@@ -15,19 +15,20 @@
 		<div class="clear"></div>
 	</div>
 	<div class="container-menu">
-		<div class="logo left w7"><h1>SCOPE.</h1></div>
-		<div class="topmenu ml7 last">
+		
+		<div class="topmenu right last">
 			<ul>
 				<li><a href="#">menu 1</a></li>
 				<li><a href="#">menu 2</a></li>
 				<li><a href="#">menu 3</a></li>
 				<li><a href="#">menu 4</a></li>
 				<li><a href="#">menu 5</a></li>
-				<li><a href="#">menu 4</a></li>
-				<li><a href="#">menu 5</a></li>
+				<li><a href="#">menu 6</a></li>
+				<li><a href="#">menu 7</a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>
+		<div class="logo w7 mra"><h1>SCOPE.</h1></div>
 		<div class="clear"></div>
 	</div>
 	<div class="container-contents">
