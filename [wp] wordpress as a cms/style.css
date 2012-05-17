@@ -5,22 +5,26 @@ Description: basic theme for use wordpress as a cms.
 Author: Ali.MD
 Version: 1
 */
-
-html, body{
-	height : 100%;
+div{
+	outline : 1px dashed white;
 }
 
-body{
+div.backimage{
+	position : fixed;
+	left     : 0;
+	right    : 0;
+	top      : 0;
+	bottom   : 0;
+	z-index  : -1;
+
 	background-image    : url('images/background.jpg');
 	background-repeat   : no-repeat;
 	background-size     : cover;
 	background-position : center top;
 }
-
-div{
-	outline : 1px dashed white;
+div.container{
+	padding-top: 20px;
 }
-
 div.container-top{
 	padding : 10px 0px;
 }
@@ -31,14 +35,18 @@ div.toptooltip{
 	padding      : 5px 8px;
 }
 
-div.container-menu > div{
-	min-height : 100px;
+div.container-menu{
+	padding: 10px 15px;
+	background-color: #fff;
 }
 
 div.logo h1{
-	width       : 134px;
-	height      : 39px;
-	background  : url('images/logo.jpg') no-repeat;
+	width       : 148px;
+	height      : 47px;
 	text-indent : 1000px;
 	overflow    : hidden;
+
+	background-image : url('images/scope_logo.jpg');
+	background-size  : 100% 100%;
 }
+
