@@ -18,13 +18,12 @@
 		
 		<div class="topmenu right last">
 			<ul>
-				<li><a href="#">menu 1</a></li>
-				<li><a href="#">menu 2</a></li>
-				<li><a href="#">menu 3</a></li>
-				<li><a href="#">menu 4</a></li>
-				<li><a href="#">menu 5</a></li>
-				<li><a href="#">menu 6</a></li>
-				<li><a href="#">menu 7</a></li>
+				<?php
+					wp_list_pages(array(
+						'title_li'=>'',
+						'depth'=>1
+					));
+				?>
 			</ul>
 			<div class="clear"></div>
 		</div>
@@ -34,10 +33,20 @@
 	<div class="container-contents">
 		<div class="sidebar w7 right last">bla bla bla</div>	
 		<div class="content mr7">
+		<?php if(have_posts()){ the_post(); ?>
 			<div class="post">
-				<h2>Article 1</h2>
-				<p>adsfhg sdgh dyrjk ety jfgjn ery ra dfbn sa aqr </p>
+				<h2><?php echo $post->post_title; ?></h2>
+				<p><?php echo the_content(); ?></p>
 			</div>
+		<?php }else{
+			echo 'Nothing !';
+		} ?>
+
+		<!--
+		<pre><?php 
+			print_r($post);
+		?></pre>
+		-->
 		</div>
 		<div class="clear"></div>
 	</div>

@@ -30,7 +30,7 @@ div.backimage{
 
 div.container{
 	padding-top : 20px;
-	font-family : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 13px/21px Georgia, "Times New Roman", Times, serif;
 }
 
 div.container-top{
@@ -62,11 +62,6 @@ div.container-contents{
 	margin-top : 10px;
 	padding    : 15px;
 	background-color: #fff;
-}
-
-div.content div.post h2{
-	font-size:24px;
-	margin-bottom:15px;
 }
 
 div.container-widgets{
@@ -110,4 +105,19 @@ div.topmenu a{
 
 div.topmenu li:hover a{
 	color : #222;
+}
+
+
+/* Posts
+-------------------------------------------------- */
+
+div.content div.post{
+	text-align: justify;
+	line-height: 1.7;
+	font-size: 15px;
+}
+
+div.content div.post h2{
+	font-size:24px;
+	margin-bottom:15px;
 }
