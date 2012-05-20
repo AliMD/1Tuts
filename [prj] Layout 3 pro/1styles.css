@@ -115,6 +115,14 @@ input.w24, textarea.w24 { width: 938px; }
 
 .right{ float:right; }
 
+.cover:after {				/* NOT Compatible with IE lt8 ! */
+	display:block;
+	content:"";
+	clear:both;
+	height:0;
+	width:0;
+}
+
 .clear{
 	clear:both;
 	width:0 !important;

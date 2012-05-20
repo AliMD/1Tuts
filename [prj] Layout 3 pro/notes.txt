@@ -1,5 +1,5 @@
 for dears waf's :tr
-25/2/1391
+25/2/91
 
 reset
 
@@ -15,3 +15,42 @@ css @ : command, not a selector
 
 ali.md/csszip Compress css for save server bandwidth (speed for iranian)
 
+-------------
+30/2/91
+
+ali.md/sl2
+ali.md/sl2/h1
+ali.md/sl2/h2
+ali.md/sl2/h3
+
+
+favicon.ico (require in root) ali.md/favicon
+Convert to icon ali.md/icon
+
+MIME Type : ali.md/mime
+
+Html5 : ali.md/html5
+
+Demo : ali.md/html5demo
+
+header
+hgroup
+	h1, h2
+footer
+section
+aside
+article
+nav
+ali.md/h5ref
+ali.md/htmlref
+
+:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+cover 1styles.css
+
+html5.js for ie
+
+IF IE 

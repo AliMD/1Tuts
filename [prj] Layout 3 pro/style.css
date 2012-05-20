@@ -1,4 +1,10 @@
-div{
+
+
+/* global layout
+-------------------------------------------------- */
+
+
+body *{
 	outline:1px dashed white;
 }
 
@@ -6,7 +12,12 @@ body{
 	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-div.backimage{
+.container{
+	padding-top : 20px;
+	font: 13px/21px Georgia, "Times New Roman", Times, serif;
+}
+
+.backimage{
 	position : fixed;
 	left     : 0;
 	right    : 0;
@@ -19,30 +30,66 @@ div.backimage{
 	background-position : center top;
 }
 
-div.container-tooltip{
+.container-tooltip{
 	padding: 10px 0px;
 }
 
-div.tooltip{
-	background-color: #ffd62c;
-	font-size:13px;
-	padding: 6px 4px;
-	margin-right:20px;
+.tooltip{
+	background-color : #ffd62c;
+	font-size        : 13px;
+	padding          : 6px 4px;
+	margin-right     : 20px;
 }
 
-div.container-header{
-	padding: 10px 15px;
+.container-header{
+	padding : 10px 15px;
+	background-color : white;
+}
+.container-header .logo{
+	padding-top : 1px;
 }
 
-div.container-header .logo{
-	
-}
-
-div.container-header .logo h1{
-	width:148px;
-	height:47px;
+.container-header .logo h1{
+	width  : 148px;
+	height : 47px;
 	background-image: url('images/scope_logo.jpg');
-	background-size:100% 100%;
-	text-indent:1000px;
-	overflow: hidden;
+	background-size: 100% 100%;
+	text-indent : 1000px;
+	overflow    : hidden;
+}
+
+.container-header .logo h2{
+	margin-top : 20px;
+	font-size  : 18px;
+}
+
+/* Main Menu
+-------------------------------------------------- */
+
+nav.topmenu{
+	padding-top : 10px;
+}
+
+nav.topmenu > ul{ 
+
+}
+
+nav.topmenu li{
+	float    : left;
+	position : relative;
+}
+
+nav.topmenu a{
+	padding : 12px;
+	display : block;
+	color   : #b2b2b6;
+	
+	font-size       : 13px;
+	text-transform  : capitalize;
+	text-decoration : none;
+	font-weight     : bold;
+}
+
+nav.topmenu li:hover a{
+	color : #222;
 }
