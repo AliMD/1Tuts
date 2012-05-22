@@ -23,12 +23,36 @@ menu
 
 wp_list_pages (http://codex.wordpress.org/Function_Reference/wp_list_pages)
 
-have_posts
 
-the_post
+have_posts()
+
+the_post()
+
+the_title()
+
+the_time()
+
+the_content()
 
 $post
 
 $post->post_title
 
 $post->post_parent
+
+$post->...
+
+__('string')  translate string and return
+
+_e('string')  translate string and echo
+
+
+get_header()
+
+get_footer()
+
+get_sidebar()
+
+get_template_part(slug,name);  =>  include slug-name.php
+
+
