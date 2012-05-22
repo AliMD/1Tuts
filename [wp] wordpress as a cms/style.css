@@ -76,7 +76,7 @@ div.container-footer{
 }
 
 
-/* Menu
+/*Top Menu
 -------------------------------------------------- */
 
 div.topmenu{
@@ -107,17 +107,48 @@ div.topmenu li:hover a{
 	color : #222;
 }
 
+/* Footer Menu
+-------------------------------------------------- */
+
+div.footermenu{
+	padding-top : 8px;
+}
+
+div.footermenu > ul{ 
+
+}
+
+div.footermenu li{
+	float    : left; /* mastmal! */
+	position : relative;
+}
+
+div.footermenu a{
+	padding : 5px;
+	display : block;
+	color   : #222;
+	
+	font-size       : 9px;
+	text-transform  : capitalize;
+	text-decoration : none;
+	font-weight     : bold;
+}
+
+div.footermenu li:hover a{
+	color : #000;
+}
+
 
 /* Posts
 -------------------------------------------------- */
 
-div.content div.post{
+div.content .post{
 	text-align: justify;
 	line-height: 1.7;
 	font-size: 15px;
 }
 
-div.content div.post h2{
+div.content .post h2{
 	font-size:24px;
 	margin-bottom:15px;
 }

@@ -36,9 +36,11 @@ the_content()
 
 $post
 
+if($post->ID==5)
+
 $post->post_title
 
-$post->post_parent
+$post->post_content
 
 $post->...
 
