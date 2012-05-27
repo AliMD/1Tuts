@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas tuts 1</title>
+	<style type="text/css">
+
+		*{
+			padding : 0;
+			margin  : 0px;
+		}
+
+		#mycanvas{
+			border   : 1px solid gray;
+			position : absolute;
+			left     : 0;
+			right    : 0;
+			top      : 0;
+			bottom   : 0;
+			margin   : auto;
+		}
+
+	</style>
+</head>
+<body>
+	<canvas id='mycanvas' width="1000" height="600" >
+		Your Browser Sucks :tr
+	</canvas>
+
+	<script type="text/javascript">
+		document.body.style.backgroundColor = '#444';
+
+		mycanvas = document.getElementById('mycanvas');
+		mycanvas.style.backgroundColor = '#222';
+	</script>
+
+</body>
+</html>

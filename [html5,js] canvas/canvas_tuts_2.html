@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Canvas Tuts 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<canvas id='canvas2d' width="1000" height="600" >
+		Your Browser Sucks :tr
+	</canvas>
+	<script type="text/javascript">
+
+		var cnv = document.getElementById('canvas2d');
+
+		var ctx = cnv.getContext('2d');
+
+		ctx.moveTo(300,200);
+
+		ctx.lineTo(700,200);
+
+		ctx.lineTo(500,450);
+
+		ctx.lineTo(300,200);
+
+		ctx.fillStyle = 'red';
+
+		ctx.fill();
+
+	</script>
+</body>
+</html>
