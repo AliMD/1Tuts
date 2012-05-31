@@ -1,0 +1,154 @@
+/*
+Theme Name: Wordpress CMS
+Theme URI: http://ali.md/
+Description: basic theme for use wordpress as a cms.
+Author: Ali.MD
+Version: 1
+*/
+
+
+/* Global Layout
+-------------------------------------------------- */
+
+div{
+	outline : 1px dashed white;
+}
+
+div.backimage{
+	position : fixed;
+	left     : 0;
+	right    : 0;
+	top      : 0;
+	bottom   : 0;
+	z-index  : -1;
+
+	background-image    : url('images/background.jpg');
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	background-position : center top;
+}
+
+div.container{
+	padding-top : 20px;
+	font: 13px/21px Georgia, "Times New Roman", Times, serif;
+}
+
+div.container-top{
+	padding : 10px 0px;
+}
+
+div.toptooltip{
+	margin-right : 10px;
+	background   : #ffd62c;
+	padding      : 5px 8px;
+}
+
+div.container-menu{
+	padding : 10px 15px;
+	background-color: #fff;
+}
+
+div.logo h1{
+	width       : 148px;
+	height      : 47px;
+	text-indent : 1000px;
+	overflow    : hidden;
+
+	background-image : url('images/scope_logo.jpg');
+	background-size  : 100% 100%;
+}
+
+div.container-contents{
+	margin-top : 10px;
+	padding    : 15px;
+	background-color: #fff;
+}
+
+div.container-widgets{
+	min-height       : 250px;
+	margin-top       : 10px;
+	background-color : #222;
+}
+
+div.container-footer{
+	min-height : 50px;
+	margin-top : 10px;
+}
+
+
+/*Top Menu
+-------------------------------------------------- */
+
+div.topmenu{
+	padding-top : 10px;
+}
+
+div.topmenu > ul{ 
+
+}
+
+div.topmenu li{
+	float    : left; /* mastmal! */
+	position : relative;
+}
+
+div.topmenu a{
+	padding : 12px;
+	display : block;
+	color   : #b2b2b6;
+	
+	font-size       : 13px;
+	text-transform  : capitalize;
+	text-decoration : none;
+	font-weight     : bold;
+}
+
+div.topmenu li:hover a{
+	color : #222;
+}
+
+/* Footer Menu
+-------------------------------------------------- */
+
+div.footermenu{
+	padding-top : 8px;
+}
+
+div.footermenu > ul{ 
+
+}
+
+div.footermenu li{
+	float    : left; /* mastmal! */
+	position : relative;
+}
+
+div.footermenu a{
+	padding : 5px;
+	display : block;
+	color   : #222;
+	
+	font-size       : 9px;
+	text-transform  : capitalize;
+	text-decoration : none;
+	font-weight     : bold;
+}
+
+div.footermenu li:hover a{
+	color : #000;
+}
+
+
+/* Posts
+-------------------------------------------------- */
+
+div.content .post{
+	text-align: justify;
+	line-height: 1.7;
+	font-size: 15px;
+}
+
+div.content .post h2{
+	font-size:24px;
+	margin-bottom:15px;
+}
