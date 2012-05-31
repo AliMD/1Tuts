@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container <?php echo 'page_'.$post->post_name ?>">
 	<div class="container-top">
 		<div class="toptooltip right">E: i@ali.md | T: 412 254-6563</div>
 		<div class="clear"></div>
