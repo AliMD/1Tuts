@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Canvas Tuts 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<canvas id='canvas2d' width="1000" height="600">
+		Your Browser Sucks :tr
+	</canvas>
+	<script type="text/javascript">
+
+		var cnv = document.getElementById('canvas2d');
+
+		var ctx = cnv.getContext('2d');
+
+		function triangle(x,y,w,h,style){
+
+			ctx.beginPath(); 
+
+			ctx.moveTo(x,y);
+
+			ctx.lineTo(x+w,y);
+
+			ctx.lineTo(x+w/2,y+h);
+
+			ctx.closePath();
+
+			ctx.fillStyle = style;
+
+			ctx.fill();
+
+		}
+
+		function paint(event){
+			var x = event.offsetX;
+			var y = event.offsetY;
+			
+			ctx.lineTo(x,y);
+
+			ctx.stroke();
+
+		}
+
+		ctx.strokeStyle = 'white';
+
+		cnv.onmousemove = paint;
+
+	</script>
+</body>
+</html>

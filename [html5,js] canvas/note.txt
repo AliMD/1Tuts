@@ -2,6 +2,8 @@
 
 var	--> variable
 
+function  --> engar yek dastoor ezafe mikone
+
 document
 
 getElementById  --> get elements by id ! (tuts 2 line 14)
@@ -17,8 +19,9 @@ closePath()  --> connect end to start
 
 strokeStyle  --> style line
 
-fillStyle  -->
+lineWidth
 
+fillStyle  -->
 
 stroke()  --> draw line
 

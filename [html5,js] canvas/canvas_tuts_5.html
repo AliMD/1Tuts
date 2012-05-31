@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Canvas Tuts 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<canvas id='canvas2d' width="1000" height="600" >
+		Your Browser Sucks :tr
+	</canvas>
+	<script type="text/javascript">
+
+		var cnv = document.getElementById('canvas2d');
+
+		var ctx = cnv.getContext('2d');
+
+		function triangle(x,y,style){
+
+			ctx.beginPath(); 
+
+			ctx.moveTo(x,y);
+
+			ctx.lineTo(x+100,y);
+
+			ctx.lineTo(x+50,y+60);
+
+			ctx.closePath();
+
+			ctx.fillStyle = style;
+
+			ctx.fill();
+
+		}
+
+		triangle(100,100,'red');
+
+		triangle(200,150,'blue');
+
+		triangle(300,100,'green');
+
+		triangle(400,150,'yellow');
+
+
+	</script>
+</body>
+</html>
