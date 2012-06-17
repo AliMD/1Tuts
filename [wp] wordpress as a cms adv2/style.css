@@ -153,6 +153,10 @@ div.content .post h2{
 	margin-bottom:15px;
 }
 
+div.content .price{
+	font-weight: bold;
+}
+
 .page_products .post h2{
 	color:red;
 }
