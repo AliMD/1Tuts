@@ -6,6 +6,7 @@
 	<style type="text/css">
 		body{
 			background-color: black;
+			-webkit-transition: all 1s;
 		}
 		div.btns{
 			width:90px;
@@ -37,11 +38,15 @@
 			for(var i=0;i<btns.length;i++){
 				btns.item(i).style.left=rnd(5,95)+'%';
 				btns.item(i).style.top=rnd(5,95)+'%';
+				btns.item(i).style.webkitTransform='rotate('+rnd(0,180)+'deg)';
+
 				btns.item(i).style.backgroundColor = randColor();
 				btns.item(i).onmouseover=function(){
 					this.style.left=rnd(5,95)+'%';
 					this.style.top=rnd(5,95)+'%';
 					this.style.backgroundColor = randColor();
+					document.body.style.backgroundColor = randColor();
+					this.style.webkitTransform='rotate('+rnd(0,180)+'deg)';
 				}
 			}
 		}
