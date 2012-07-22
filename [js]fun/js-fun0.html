@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		div.btns{
+			width:90px;
+			height:40px;
+			background-color: darkmagenta;
+			color: white;
+			position: absolute;
+			left:45%;
+			top:45%;
+			font-size:18px;
+			text-align: center;
+			line-height:40px;
+			-webkit-transition: all 500ms;
+		}
+	</style>
+</head>
+<body>
+	<div class='btns' id='btn'>Click Me</div>
+
+	<script type="text/javascript">
+		function rnd(max){
+			return Math.round(Math.random()*max);
+		}
+		var btn = document.getElementById('btn');
+		btn.onmouseover = function(){
+			btn.style.left=rnd(90)+'%';
+			btn.style.top=rnd(95)+'%';
+		}
+		
+	</script>
+</body>
+</html>
