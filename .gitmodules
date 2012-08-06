@@ -1,3 +1,6 @@
 [submodule "JavaScript SlideShow in Depth"]
 	path = JavaScript SlideShow in Depth
 	url = https://github.com/AliMD/JavaScript-SlideShow-in-Depth.git
+[submodule "JavaScriptAdv - Create Your Own jQuery"]
+	path = JavaScriptAdv - Create Your Own jQuery
+	url = https://github.com/AliMD/JavaScriptAdv-Create-Your-Own-jQuery.git
