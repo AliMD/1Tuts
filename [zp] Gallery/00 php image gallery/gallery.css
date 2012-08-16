@@ -1,0 +1,44 @@
+/*
+ * Gallery v1
+ * ali.md/wd
+ */
+
+@charset "UTF-8";
+
+html,body,div.container, div.gallery{
+	height:100%; /* only for this sample */
+}
+
+body{
+	background-color : #001;
+}
+
+div.container{
+	width  : 950px;
+	margin : 0 auto;
+}
+
+div.gallery{
+	
+}
+
+div.gallery a{
+	float   : left;
+	display : block;
+	border  : solid white;
+	border-width  : 4px 4px 20px 4px;
+}
+
+div.gallery img{
+	width  :120px; /* for netschool performance */
+	height :auto;
+}
+
+div.gallery a:hover{
+	z-index :2;
+	opacity : 0.98;
+}
+
+div.gallery img{
+	display : block;
+}

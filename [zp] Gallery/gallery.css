@@ -1,0 +1,49 @@
+/*
+ * Gallery v1
+ * ali.md/wd
+ */
+
+@charset "UTF-8";
+
+body{
+	background-color: #001;
+}
+
+div.container{
+	width: 950px;
+	margin: 0 auto;
+}
+
+div.gallery{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform 1s;
+}
+
+div.gallery a{
+	display: block;
+	position: absolute;
+	left:250px;
+	top:185px;
+	border:solid white;
+	border-width: 4px 4px 20px 4px;
+	border-radius: 2px;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transform:scale(0.4,0.4);
+}
+
+div.gallery img{
+	width:100px;
+	height:auto;
+}
+
+div.gallery a:hover{
+	z-index:2;
+	opacity: 0.98;
+}
+
+div.gallery img{
+	display: block;
+}
