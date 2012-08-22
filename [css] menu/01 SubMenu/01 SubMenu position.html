@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" />
-	<title>09 Menu first-child</title>
+	<title>01 SubMenu Position</title>
 	<style type="text/css">
 		* {
 			padding : 0;
@@ -15,31 +15,31 @@
 			clear  : both;
 		}
 
-		div.menu {
-			margin-top  : 10px;
-			margin-left : 10px;
-			border      : 1px solid black;
+		nav.menu {
+			margin-top   : 10px;
+			padding-left : 30px;
+			background   : #e82;
 		}
 
-		div.menu ul {
+		nav.menu menu {
 			list-style-type : none;
 		}
 
-		div.menu li {
-			float       : left;
-			background  : #e82;
-			margin-left : 2px;
+		nav.menu li {
+			float        : left;
+			border-right : 1px dashed white;
 		}
 
-		div.menu li:hover {
+		nav.menu li:hover {
 			background  : #C72;
 		}
 
-		div.menu li:first-child {
-			margin-left : 0;
+		nav.menu li:first-child {
+			border-left : 1px dashed white;
+			
 		}
 
-		div.menu a {
+		nav.menu a {
 			color       : white;
 			display     : block;
 			padding     : 7px 14px;
@@ -48,20 +48,39 @@
 			text-transform  : capitalize;
 			text-decoration : none;
 		}
+
+		nav.menu li menu{
+			position : absolute;
+			left     : 0;
+			top      : 0;
+		}
+
+		nav.menu li li{
+			float       : none;
+			background  : #e82;
+		}
 	</style>
 </head>
 <body>
-	<div class="menu">
-		<ul>
+	<nav class="menu">
+		<menu>
 			<li><a href="#">home</a></li>
 			<li><a href="#">about me</a></li>
 			<li><a href="#">blog</a></li>
-			<li><a href="#">portfolio</a></li>
+			<li>
+				<a href="#">portfolio</a>
+				<menu>
+					<li><a href="#">logo</a></li>
+					<li><a href="#">poster</a></li>
+					<li><a href="#">catalogue</a></li>
+					<li><a href="#">business card</a></li>
+				</menu>
+			</li>
 			<li><a href="#">gallery</a></li>
 			<li><a href="#">contact me</a></li>
-		</ul>
+		</menu>
 		<div class="badboy"></div>
-	</div>
+	</nav>
 	<p>this is sample (jafang) text. this is sample (jafang) text. this is sample (jafang) text. this is sample (jafang) text. this is sample (jafang) text. </p>
 </body>
 </html>
