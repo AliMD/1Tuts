@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" />
-	<title>03 Menu hover</title>
+	<title>01 Menu backimg fix height</title>
 	<style type="text/css">
 		* {
 			padding : 0;
@@ -26,27 +26,29 @@
 		}
 
 		nav.menu li {
-			float       : left;
-			height      : 43px;
+			float        : left;
+			height       : 43px;
+			border-right : 1px dashed white;
 		}
 
 		nav.menu li:hover {
-			background  : url('images/active-bg.gif');
+			background  : #C72;
+		}
+
+		nav.menu li:first-child {
+			border-left : 1px dashed white;
 			
 		}
 
 		nav.menu a {
-			color       : #888;
+			color       : white;
 			display     : block;
-			padding     : 11px 14px 9px;
-			font-family : "Times New Roman", Times, serif;
-			font-size   : 18px;
+			padding     : 7px 14px;
+			font-family : "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+			font-size   : 17px;
 			text-transform  : capitalize;
 			text-decoration : none;
-		}
-
-		nav.menu li:hover a{
-			color : #fff;
+			outline: 1px solid black;
 		}
 	</style>
 </head>
