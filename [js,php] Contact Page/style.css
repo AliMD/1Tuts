@@ -58,11 +58,11 @@ body {
 	background-image:url('images/button-bg.png');
 }
 
-.contact input.err {
+.contact .err {
 	background-color: #FCDFD2 !important;
 }
 
-.contact input.ok {
+.contact .ok{
 	background-color: #D5FCD2 !important;
 }
 
