@@ -14,6 +14,14 @@ $(function(){
 			err = true
 		}
 
+		var subject = $('#subject')
+		if( validateText(subject.val(),5) ){
+			subject.removeClass('err').addClass('ok');
+		} else {
+			subject.removeClass('ok').addClass('err');
+			err = true
+		}
+
 		return !err;
 	});
 });
