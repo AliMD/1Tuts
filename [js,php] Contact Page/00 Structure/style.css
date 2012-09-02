@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#E6E6E6;/*kar nemikone????*/
+}
+
+div.container{
+	width:330px;
+	position:fixed;
+	right:60px;
+}
+
+input:focus{
+	background-color:#eee;
+}
+
+div.container .formdesign{
+	position:relative;
+	top:-390px;
+	width:320px;
+	margin:0 auto;
+	border:1px solid #fff;
+	border-radius:10px;
+	background-color:#f4f4f4;
+	box-shadow:0 0 20px #666;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0 15px 15px;
+}
+
+div.container .formdesign h2{
+	margin:15px 0 10px;
+	color:#ccc;
+	font-size:22px;
+	text-shadow:0 1px 0 #fff;
+	letter-spacing:2px;
+	font-weight:bold;
+}
+
+div.container div.formdesign .lbl{
+	font-size:11px;
+	color:#666;
+	margin-left:5px;
+	text-shadow:0 1px 0 #fff;
+}
+
+div.container div.formdesign .name{
+	border:1px solid #fff;
+	border-left:1px solid #b2b2b2;
+	border-top:1px solid #b2b2b2;
+	border-radius:3px;
+	background-color:#e7e7e7;
+	padding:8px 8px 8px 30px;
+	margin:5px 0 10px;
+	width:280px;
+	-webkit-transition:all 0.8s;
+}
+
+div.container div.formdesign .name:hover{
+	background-color:#fff;
+}
+
+div.container .btn{
+	margin:5px 5px 10px 0;
+	padding:5px 20px;
+	color:#fff;
+	border:0 solid #fff;
+	border-radius:15px;
+	box-shadow:4px 4px 3px #999;
+	background-image:url('../../images/zohreh-img/mail[php]/button-bg.png');
+}
+
+div.container .btn:hover{
+	background-image:url('../../images/zohreh-img/mail[php]/button-hover-bg.png');
+}
+
+div.container div.formdesign .close{
+	position:absolute;
+	right:-25px;
+	top:330px;
+	background-image:url('../../images/zohreh-img/mail[php]/close.png');
+	width:50px;
+	height:50px;
+	display:block;
+}
+
+div.container div.formdesign .close:hover{
+	background-image:url('../../images/zohreh-img/mail[php]/close-2.png');
+}
+
+div.container .contact{
+	text-decoration:none;
+	position:absolute;
+	top:-10px;
+	right:150px;
+	border:0 none;
+	border-radius:0px;
+}
+
+.mailicon{
+	background-image:url('../../images/zohreh-img/mail[php]/email.png');
+	background-repeat:no-repeat;
+	background-position:-20px -7px;
+}
+
+input:focus .mailicon{
+	background-image:url('../../images/zohreh-img/mail[php]/email-active.png');
+	background-repeat:no-repeat;
+	background-position:-20px -7px;
+}
+
+.nameicon{
+	background-image:url('../../images/zohreh-img/mail[php]/name.png');
+	background-repeat:no-repeat;
+	background-position:-20px -7px;
+}
+
+input:focus .nameicon{
+	background-image:url('../../images/zohreh-img/mail[php]/name-active.png');
+	background-repeat:no-repeat;
+	background-position:-20px -7px;
+}
+
+.texticon{
+	background-image:url('../../images/zohreh-img/mail[php]/message.png');
+	background-repeat:no-repeat;
+	background-position:-20px -7px;
+}
+
+input:focus .texticon{
+	background-image:url('../../images/zohreh-img/mail[php]/message-active.png');
+	background-repeat:no-repeat;
+	background-position:-20px -7px;
+}

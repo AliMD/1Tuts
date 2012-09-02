@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Contact Us</title>
+
+<link type="text/css" rel="stylesheet" href="mail.css" />
+<link type="text/css" rel="stylesheet" href="../../reset.css" />
+
+<script type="text/javascript" src="../../zepto.js" ></script>
+<script type="text/javascript" src="mail.js" ></script>
+
+</head>
+
+<body style="background-color:#e6e6e6;">
+
+<div class="container">
+	<a href="#" class="contact btn">Contact</a>
+	<div class="formdesign">
+      <h2>Contact Us ...</h2>
+	 	<form action="mail.php" method="post">
+           	<label class="lbl">Name:</label>
+        	<input class="name nameicon" type="text" name="name" placeholder="Name" data-tooltip="You're email will be kept strictly confidential and will never be shared with anyone." /><br />
+            <label class="lbl">Email:</label>
+            <input class="name mailicon" type="text" name="mail" placeholder="Email" /><br />
+            <label class="lbl">Subject:</label>
+            <input class="name" type="text" name="subject" placeholder="Subject" /><br />
+            <label class="lbl">Message:</label>
+            <textarea class="name texticon" name="txt" placeholder="Text" ></textarea><br />
+            <input class="btn" type="submit" name="sub" value="Send Message" />
+            <input class="btn" type="reset" name="reset" value="Reset" />
+    	</form>
+        <a href="#" title="close" class="close"></a>
+    </div>
+</div>
+
+</body>
+</html>
