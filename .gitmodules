@@ -1,6 +1,6 @@
 [submodule "CSS Page Layouts"]
 	path = CSS Page Layouts
 	url = https://github.com/AliMD/CSS-Page-Layouts
-[submodule "CSS-Menu-in-Depth"]
-	path = CSS-Menu-in-Depth
+[submodule "CSS Menu in Depth"]
+	path = CSS Menu in Depth
 	url = https://github.com/AliMD/CSS-Menu-in-Depth.git
