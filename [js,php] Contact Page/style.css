@@ -6,28 +6,26 @@ body {
 .contact {
 	width: 330px;
 	margin: 100px auto 0;
-	border:1px solid #fff;
 	border-radius:10px;
 	background-color:#f4f4f4;
 	box-shadow:0 0 20px #666;
 	font-size:11px;
 	font-family:Arial, Helvetica, sans-serif;
-	padding:0 15px 15px;
+	padding:1px 15px 15px;
 }
 
 .contact h2 {
-	margin        :15px 0 10px;
-	color         :#ccc;
+	margin        :20px 0 15px;
+	color         :#88708A;
 	font-size     :22px;
-	text-shadow   :0 1px 0 #fff;
+	text-shadow   :0 1px 0 #DADADA;
 	letter-spacing:2px;
 	font-weight   :bold;
 }
 
 .contact label {
-	font-size:11px;
-	color:#666;
-	margin-left:5px;
+	font-size:12px;
+	color:#6A5C6B;
 	text-shadow:0 1px 0 #fff;
 }
 
@@ -37,8 +35,9 @@ body {
 	border-top:1px solid #b2b2b2;
 	border-radius:3px;
 	background-color:#E7E7E7;
-	padding:8px 8px 8px 30px;
-	margin:5px 0 10px;
+	padding:8px;
+	padding-left: 28px;
+	margin:5px 0 14px;
 	width:280px;
 	display: block;
 	-webkit-transition:all 0.8s;
@@ -56,7 +55,7 @@ body {
 	border:0 solid #fff;
 	border-radius:5px;
 	box-shadow:1px 1px 2px #999;
-	background-image:url('../images/button-bg.png');
+	background-image:url('images/button-bg.png');
 }
 
 .contact input.err {
@@ -68,43 +67,43 @@ body {
 }
 
 .contact .btn:hover {
-	background-image:url('../images/button-hover-bg.png');
+	background-image:url('images/button-hover-bg.png');
 }
 
 .contact .mailicon {
-	background-image:url('../images/email.png');
+	background-image:url('images/email.png');
 	background-repeat:no-repeat;
 	background-position:-20px -7px;
 }
 
 .contact input.mailicon:focus {
-	background-image:url('../images/email-active.png');
+	background-image:url('images/email-active.png');
 	background-repeat:no-repeat;
 	background-position:-20px -7px;
 }
 
 .contact .nameicon {
-	background-image:url('../images/name.png');
+	background-image:url('images/name.png');
 	background-repeat:no-repeat;
 	background-position:-20px -7px;
 }
 
 .contact input.nameicon:focus {
-	background-image:url('../images/name-active.png');
+	background-image:url('images/name-active.png');
 	background-repeat:no-repeat;
 	background-position:-20px -7px;
 }
 
 
 .contact .texticon {
-	background-image:url('../images/message.png');
+	background-image:url('images/message.png');
 	background-repeat:no-repeat;
 	background-position:-20px -7px;
 }
 
 
 .contact .texticon:focus {
-	background-image:url('../images/message-active.png');
+	background-image:url('images/message-active.png');
 	background-repeat:no-repeat;
 	background-position:-20px -7px;
 }
