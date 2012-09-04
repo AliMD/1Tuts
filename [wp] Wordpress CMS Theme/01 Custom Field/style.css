@@ -134,3 +134,18 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	font-size: 1px;
 	line-height: 0px;
 }
+
+/* post_images
+------------------------- */
+
+.post_images img{
+	display: block;
+	margin:5px;
+	float: left;
+	-webkit-transition:all 500ms;
+}
+
+.post_images img:hover{
+	width: 200px;
+	height: auto;
+}
