@@ -111,3 +111,9 @@ body {
 .contact textarea.texticon {
 	height : 120px;
 }
+
+#ifrm{
+	width: 315px;
+	height: 75px;
+	border: 0 none;
+}

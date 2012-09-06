@@ -3,6 +3,19 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Sending mail ...</title>
+	<style type="text/css">
+		body {
+			background-color: #F4F4F4;
+		}
+
+		.ok {
+			color:#23B3AB;
+		}
+
+		.err {
+			color:#BD5B3D;
+		}
+	</style>
 </head>
 <body>
 	<?php
@@ -22,15 +35,13 @@
 					$text,
 					"From:$name <$email" )
 			){
-				echo '<h2>Mail sent</h2>';
+				echo '<h2 class="ok">Mail sent</h2>';
 			}else{
-				echo '<h2>Error in sending mail.</h2>';
+				echo '<h2 class="err">Error in sending mail.</h2>';
 			}
 		}else{
-			echo '<h2>Access Restricted !</h2>';
+			echo '<h2 class="err">Access Restricted !</h2>';
 		}
 	?>
-
-	<a href="./">Back</a>
 </body>
 </html>
