@@ -3,7 +3,7 @@ function validateText(str,len){
 }
 
 function validateEmail(str){
-	var emailPattern = /^[a-z0-9_+.-]+@(?:[A-Z0-9-]+\.)+[a-z]{2,6}$/i;
+	var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i ;
 
 	return emailPattern.test(str);
 }
