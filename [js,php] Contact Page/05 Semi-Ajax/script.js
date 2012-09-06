@@ -53,4 +53,10 @@ $(function(){
 		return !err;
 
 	});
+
+	$('#reset').click(function(){
+		$('#ifrm').animate({
+			height:'0px'
+		},200);
+	});
 });
