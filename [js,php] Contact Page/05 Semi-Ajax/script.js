@@ -44,6 +44,12 @@ $(function(){
 			err = true;
 		}
 
+		if(!err){
+			$('#ifrm').animate({
+				height:'75px'
+			},500);
+		}
+
 		return !err;
 
 	});

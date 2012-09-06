@@ -114,6 +114,6 @@ body {
 
 #ifrm{
 	width: 315px;
-	height: 75px;
+	height: 0;
 	border: 0 none;
 }
