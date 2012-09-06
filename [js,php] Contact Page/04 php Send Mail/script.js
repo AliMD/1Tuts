@@ -3,7 +3,9 @@ function validateText(str,len){
 }
 
 function validateEmail(str){
-	return (validateText(str,7) && str.indexOf('@')>0);
+	var emailPattern = /^[a-z0-9_+.-]+@(?:[A-Z0-9-]+\.)+[a-z]{2,6}$/i;
+
+	return emailPattern.test(str);
 }
 
 $(function(){
