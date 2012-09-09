@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title><?php bloginfo('name'); wp_title(); ?></title>
-<link href="<?php bloginfo('template_url'); ?>\style.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/zepto.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
+
 </head>
 
 <body>
