@@ -140,12 +140,24 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 
 .post_images img{
 	display: block;
-	margin:5px;
+	margin:4px;
 	float: left;
 	-webkit-transition:all 500ms;
 }
 
 .post_images img:hover{
-	width: 200px;
-	height: 200px;
+	-webkit-transform: scale(1.1);
+}
+
+div.darkbox{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: none;
+	opacity: 0;
 }
