@@ -6,14 +6,7 @@
 			));
 		?>
 	</ul>
-<?php
-	global $template;
-	if($template =='products'){
-?>
-
-	<p>dsfg sdfg sdfg sdtwe hsdtgh sdfh sdfdsfg sdfg sdfg sdtwe hsdtgh sdfh sdfdsfg sdfg sdfg sdtwe hsdtgh sdfh sdfdsfg sdfg sdfg sdtwe hsdtgh sdfh sdfdsfg sdfg sdfg sdtwe hsdtgh sdfh sdf</p>
-
-<?php
-	}
-?>
+	<?php
+    	dynamic_sidebar("Sidebar Left");
+    ?>
 </div>
