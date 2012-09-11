@@ -1,6 +1,8 @@
 <?php
 	add_theme_support('menus');
 
+	register_nav_menu("mainmenu", 'Right Menu');
+
 	register_sidebar(array(
 		'name' => 'Sidebar Right',
 		'id' => 'sidebar-r',
