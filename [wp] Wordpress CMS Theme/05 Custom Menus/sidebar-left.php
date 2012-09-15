@@ -1,23 +1,16 @@
 <div class="sidebar1">
-	<nav class="nav">
+	<nav>
 		<?php
 			wp_nav_menu(array(
-				'theme_location'  => 'main-menu',
-				'menu'            => '', 
+				'theme_location'  => 'mainmenu',
 				'container'       => false, 
-				'container_class' => "menu-{menu slug}-container", 
-				'container_id'    => '',
-				'menu_class'      => 'menu', 
-				'menu_id'         => '',
-				'echo'            => true,
-				'fallback_cb'     => 'wp_page_menu',
+				'container_class' => '', 
+				'menu_class'      => '', 
 				'before'          => '',
 				'after'           => '',
 				'link_before'     => '',
 				'link_after'      => '',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				'depth'           => 0,
-				'walker'          => '')
+				'items_wrap'      => '<ul class="%2$s">%3$s</ul>')
 			);
 		?>
 	</nav>

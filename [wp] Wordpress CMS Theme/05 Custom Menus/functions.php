@@ -1,7 +1,7 @@
 <?php
 	add_theme_support('menus');
 
-	register_nav_menu('main-menu', "Main Menu");
+	register_nav_menu('mainmenu', "Main Manu");
 
 	register_sidebar(array(
 		'name' => 'Sidebar Right',
@@ -22,5 +22,3 @@
 		'before_title' => '<h2 class="widgettitle">',
 		'after_title' => "</h2>\n"
 	));
-	
-	
