@@ -91,24 +91,45 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 /* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
-ul.nav {
+nav {
 	list-style: none; /* this removes the list marker */
 	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
 	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
 }
-ul.nav li {
+nav ul{
+	list-style-type: none;
+}
+nav li {
+	position: relative;
 	border-bottom: 1px solid #666; /* this creates the button separation */
 }
-ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+nav a, nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
 	padding: 5px 5px 5px 15px;
 	display: block; /* this gives the anchor block properties so it fills out the whole LI that contains it so that the entire area reacts to a mouse click. */
-	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
 	text-decoration: none;
 	background: #C6D580;
 }
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+nav a:hover, nav a:active, nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
 	background: #ADB96E;
 	color: #FFF;
+}
+
+nav li li a {
+	white-space: nowrap;
+}
+
+nav li ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 2;
+	min-width: 100%;
+	border-left: 1px solid #aaa;
+}
+
+nav li:hover > ul {
+	display: block;
 }
 
 /* ~~ The footer styles ~~ */
