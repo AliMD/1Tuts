@@ -22,3 +22,8 @@
 		'before_title' => '<h2 class="widgettitle">',
 		'after_title' => "</h2>\n"
 	));
+
+	register_post_type("book", array(
+		'public' => true,
+		'label' => 'Books'
+	));
