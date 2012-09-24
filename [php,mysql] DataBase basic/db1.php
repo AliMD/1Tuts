@@ -10,17 +10,18 @@
 function db_err(){
 	$err_num = mysql_errno();
 	$err_msg = mysql_error();
-	die("Error $err_num: $err_msg");
+	die("<h3 style='color:red;'>Error $err_num: $err_msg</h3>");
 }
 
-$db_con = @mysql_connect("localhost","root","") or db_err();
+$dbcon = @mysql_connect('localhost','root','') or db_err();
 
-mysql_select_db('mydb',$db_con);
+@mysql_select_db('test',$dbcon) or db_err();
+
+$res = mysql_query("SELECT * FROM users") or db_err();
 
 echo 'ok';
 
-
-@mysql_close($db_con);
+@mysql_close($dbcon);
 
 ?>
 </body>
