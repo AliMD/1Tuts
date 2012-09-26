@@ -19,7 +19,9 @@ $dbcon = @mysql_connect('localhost','root','') or db_err();
 
 $res = mysql_query("SELECT * FROM users") or db_err();
 
-echo 'ok';
+$row1 = mysql_fetch_array($res,MYSQL_ASSOC);
+
+print_r($row1);
 
 @mysql_close($dbcon);
 

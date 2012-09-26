@@ -19,9 +19,11 @@ $dbcon = @mysql_connect('localhost','root','') or db_err();
 
 $res = mysql_query("SELECT * FROM users") or db_err();
 
-$row = mysql_fetch_array($res,MYSQL_ASSOC);
+while($row = mysql_fetch_array($res,MYSQL_ASSOC)){
 
-echo "User $row[id] : $row[fname] $row[lname] &lt; $row[email] &gt;";
+	echo "User $row[id] : $row[fname] $row[lname] &lt; $row[email] &gt; <br/>";
+
+}
 
 @mysql_close($dbcon);
 
