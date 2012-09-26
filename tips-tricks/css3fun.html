@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: #000;
+		}
+
+		.container {
+			width: 802px;
+			margin:50px auto 0;
+			border: 2px dashed gray;
+		}
+
+		.badboy {
+			width:0;
+			height:0;
+			clear: both;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: darkmagenta;
+			float: left;
+			margin:5px;
+			border: 2px solid black;
+			border-radius: 5px;
+			-webkit-transition: all 1s ease-in-out;
+		}
+
+		.box:hover {
+			-webkit-transform: rotate(180deg) scale(1.5,1.5);
+			-webkit-transition: all 300ms ease-out;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<script type="text/javascript">
+			function randColor(){
+				var c='#';
+				for(var i=0;i<6;i++){
+					c+=Math.floor(Math.random()*7).toString(16);
+				}
+				return c;
+			}
+			for(var i=0;i<28;i++){
+				document.write('<div style="background-color:'+randColor()+';" class="box"></div>');
+			}
+		</script>
+		<div class="badboy"></div>
+	</div>
+</body>
+</html>
