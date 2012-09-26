@@ -3,19 +3,47 @@ div.container{
 	margin      : 0 auto;
 	padding-top : 1px;
 
-	-webkit-perspective : 500px;
+	-webkit-perspective : 800px;
 }
 
 div.box3d{
-	width      : 150px;
-	height     : 70px;
-	margin     : 100px auto 0;
-	background : darkmagenta;
-
-	-webkit-transform  : rotateX(70deg);
-	-webkit-transition : -webkit-transform 700ms;
+	width      : 400px;
+	height     : 150px;
+	margin     : 150px auto 0;
+	position : relative;
+	color :white;
+	line-height : 150px;
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
 }
 
-div.box3d:hover{
-	-webkit-transform : rotateX(15deg);
+div.box3d div.frontface,
+div.box3d div.backface {
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 2s;
+	width      : inherit;
+	height     : inherit;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+div.box3d div.backface {
+	background-color: darkorange;
+	-webkit-transform : rotateX(-180deg);
+	/* top:100%; */
+}
+
+div.box3d div.frontface {
+	background-color: darkmagenta;
+}
+
+div.box3d:hover div.backface {
+	-webkit-transform : rotateX(0deg);
+}
+
+div.box3d:hover div.frontface {
+	-webkit-transform : rotateX(180deg);
 }
