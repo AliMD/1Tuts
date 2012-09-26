@@ -7,17 +7,16 @@ $db['user'] = 'root';
 
 $db = array(
 	'con' => '',
-	'name'   => 'mydb',
+	'name'   => 'ciw_database',
 	'server' => 'localhost',
 	'user'   => 'root',
 	'pass'   => ''
-
 );
 
 function db_err(){
 	$err_num = mysql_errno();
 	$err_msg = mysql_error();
-	die("Error $err_num: $err_msg");
+	die("<h3 style='color:red;'>Error $err_num: $err_msg</h3>");
 }
 
 function db_connect(){
@@ -36,6 +35,7 @@ function db_query($q){
 function db_close(){
 	global $db;
 	@mysql_close($db['con']);
+	$db['con']='';
 }
 
 function db_getrows($table){
@@ -52,7 +52,7 @@ function show_array($arr){
 	echo '</pre>';
 }
 
-function show_table($rows){
+function print_table($rows){
 	echo '<table border="1" >';
 
 	echo "<tr>";

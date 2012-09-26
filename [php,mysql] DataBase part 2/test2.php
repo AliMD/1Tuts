@@ -7,18 +7,15 @@
 <body>
 <?php
 
-require_once('db.php');
+require_once 'db2.php';
 
 db_connect();
 
-$arr = db_getrows('addressbook');
-
-show_table($arr);
-
-show_array($arr);
-
+$books = db_getrows('products');
 
 db_close();
+
+print_table($books);
 
 ?>
 </body>
