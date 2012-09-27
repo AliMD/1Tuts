@@ -12,7 +12,7 @@ body {
 	margin-right: 15px;
 }
 
-.gallery a {
+.gallery li a {
 	display: block;
 	border: 8px solid #FAFAFA;
 	border-bottom-width: 30px;
