@@ -163,7 +163,7 @@ lightbox = new Lightbox options
       if ($link.attr('rel') === 'lightbox') {
         this.album.push({
           link: $link.attr('href'),
-          title: $link.attr('title')
+          title: $link.attr('data-desc')
         });
       } else {
         _ref = $($link.prop("tagName") + '[rel="' + $link.attr('rel') + '"]');
@@ -171,7 +171,7 @@ lightbox = new Lightbox options
           a = _ref[i];
           this.album.push({
             link: $(a).attr('href'),
-            title: $(a).attr('title')
+            title: $(a).attr('data-desc')
           });
           if ($(a).attr('href') === $link.attr('href')) imageNumber = i;
         }
