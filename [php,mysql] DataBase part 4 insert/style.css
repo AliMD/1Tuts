@@ -1,0 +1,43 @@
+
+
+/* Book list
+-------------------------------------------------- */
+
+div.booklist{
+	
+}
+
+div.booklist h1{
+	margin-bottom: 25px;
+}
+
+div.booklist div.book{
+	margin-bottom: 25px;
+	width:300px;
+}
+
+div.booklist .title{
+	
+}
+
+div.booklist .pic{
+	display : block;
+	float   : left;
+	width   : 60px;
+	height  :auto;
+}
+
+div.booklist .text{
+	margin-left : 70px;
+}
+
+div.booklist .author{
+	display : block;
+}
+div.booklist .price{
+	display : block;
+	text-align: right;
+	font-weight:bold;
+	font-size:16px;
+	margin-top: 10px;
+}

@@ -1,0 +1,125 @@
+/* 1styles CSS Layout helper by 1devs, base on blueprintcss grid system */
+/* fork me : www.github.com/1devs/1styles */
+
+
+/* A container should group all your columns. */
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8, .w9, .w10, .w11, .w12, .w13, .w14, .w15, .w16, .w17, .w18, .w19, .w20, .w21, .w22, .w23 {
+  margin-right: 10px;
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.w1 {width: 30px;}		.w2 {width: 70px;}		.w3 {width: 110px;}		.w4 {width: 150px;}		.w5 {width: 190px;}		.w6 {width: 230px;}
+.w7 {width: 270px;}		.w8 {width: 310px;}		.w9 {width: 350px;}		.w10 {width: 390px;}	.w11 {width: 430px;}	.w12 {width: 470px;}
+.w13 {width: 510px;}	.w14 {width: 550px;}	.w15 {width: 590px;}	.w16 {width: 630px;}	.w17 {width: 670px;}	.w18 {width: 710px;}
+.w19 {width: 750px;}	.w20 {width: 790px;}	.w21 {width: 830px;}	.w22 {width: 870px;}	.w23 {width: 910px;}	.w24 {width: 950px;}
+
+.f1 { font-size: 0.625em;	/* 10px */}
+.f2 { font-size: 0.75em;	/* 12px */}
+.f3 { font-size: 0.875em;	/* 14px */}
+.f4 { font-size: 1em;		/* 16px */}
+.f5 { font-size: 1.125em;	/* 18px */}
+.f6 { font-size: 1.25em;	/* 20px */}
+.f7 { font-size: 1.375em;	/* 22px */}
+.f8 { font-size: 1.5em;		/* 24px */}
+.f9 { font-size: 1.625em;	/* 26px */}
+.f10 { font-size: 1.75em;	/* 28px */}
+.f11 { font-size: 2em;		/* 32px */}
+.f12 { font-size: 2.25em;	/* 36px */}
+.f13 { font-size: 2.5em;	/* 40px */}
+.f14 { font-size: 3em;		/* 48px */}
+.f15 { font-size: 4em;		/* 64px */}
+
+/* Use these classes to set the width of an input. */
+input.w1, textarea.w1, input.w2, textarea.w2, input.w3, textarea.w3, input.w4, textarea.w4, input.w5, textarea.w5, input.w6, textarea.w6, input.w7, textarea.w7, input.w8, textarea.w8, input.w9, textarea.w9, input.w10, textarea.w10, input.w11, textarea.w11, input.w12, textarea.w12, input.w13, textarea.w13, input.w14, textarea.w14, input.w15, textarea.w15, input.w16, textarea.w16, input.w17, textarea.w17, input.w18, textarea.w18, input.w19, textarea.w19, input.w20, textarea.w20, input.w21, textarea.w21, input.w22, textarea.w22, input.w23, textarea.w23, input.w24, textarea.w24 {
+  border-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input.w1, textarea.w1 { width: 18px; }
+input.w2, textarea.w2 { width: 58px; }
+input.w3, textarea.w3 { width: 98px; }
+input.w4, textarea.w4 { width: 138px; }
+input.w5, textarea.w5 { width: 178px; }
+input.w6, textarea.w6 { width: 218px; }
+input.w7, textarea.w7 { width: 258px; }
+input.w8, textarea.w8 { width: 298px; }
+input.w9, textarea.w9 { width: 338px; }
+input.w10, textarea.w10 { width: 378px; }
+input.w11, textarea.w11 { width: 418px; }
+input.w12, textarea.w12 { width: 458px; }
+input.w13, textarea.w13 { width: 498px; }
+input.w14, textarea.w14 { width: 538px; }
+input.w15, textarea.w15 { width: 578px; }
+input.w16, textarea.w16 { width: 618px; }
+input.w17, textarea.w17 { width: 658px; }
+input.w18, textarea.w18 { width: 698px; }
+input.w19, textarea.w19 { width: 738px; }
+input.w20, textarea.w20 { width: 778px; }
+input.w21, textarea.w21 { width: 818px; }
+input.w22, textarea.w22 { width: 858px; }
+input.w23, textarea.w23 { width: 898px; }
+input.w24, textarea.w24 { width: 938px; }
+
+
+.ml1 { margin-left: 40px; }		.ml2 { margin-left: 80px; }		.ml3 { margin-left: 120px; }	.ml4 { margin-left: 160px; }
+.ml5 { margin-left: 200px; }	.ml6 { margin-left: 240px; }	.ml7 { margin-left: 280px; }	.ml8 { margin-left: 320px; }
+.ml9 { margin-left: 360px; }	.ml10 { margin-left: 400px; }	.ml11 { margin-left: 440px; }	.ml12 { margin-left: 480px; }
+.ml13 { margin-left: 520px; }	.ml14 { margin-left: 560px; }	.ml15 { margin-left: 600px; }	.ml16 { margin-left: 640px; }
+.ml17 { margin-left: 680px; }	.ml18 { margin-left: 720px; }	.ml19 { margin-left: 760px; }	.ml20 { margin-left: 800px; }
+.ml21 { margin-left: 840px; }	.ml22 { margin-left: 880px; }	.ml23 { margin-left: 920px; }	.ml24 { margin-left: 960px; }
+.mla { margin-left: auto; }
+
+.mr1 { margin-right: 40px; }	.mr2 { margin-right: 80px; }	.mr3 { margin-right: 120px; }	.mr4 { margin-right: 160px; }
+.mr5 { margin-right: 200px; }	.mr6 { margin-right: 240px; }	.mr7 { margin-right: 280px; }	.mr8 { margin-right: 320px; }
+.mr9 { margin-right: 360px; }	.mr10 { margin-right: 400px; }	.mr11 { margin-right: 440px; }	.mr12 { margin-right: 480px; }
+.mr13 { margin-right: 520px; }	.mr14 { margin-right: 560px; }	.mr15 { margin-right: 600px; }	.mr16 { margin-right: 640px; }
+.mr17 { margin-right: 680px; }	.mr18 { margin-right: 720px; }	.mr19 { margin-right: 760px; }	.mr20 { margin-right: 800px; }
+.mr21 { margin-right: 840px; }	.mr22 { margin-right: 880px; }	.mr23 { margin-right: 920px; }	.mr24 { margin-right: 960px; }
+.mra { margin-right: auto; }
+
+/* Add these to a column to append empty cols. */
+
+.pr1 { padding-right: 40px; }	.pr2 { padding-right: 80px; }	.pr3 { padding-right: 120px; }	.pr4 { padding-right: 160px; }
+.pr5 { padding-right: 200px; }	.pr6 { padding-right: 240px; }	.pr7 { padding-right: 280px; }	.pr8 { padding-right: 320px; }
+.pr9 { padding-right: 360px; }	.pr10 { padding-right: 400px; }	.pr11 { padding-right: 440px; }	.pr12 { padding-right: 480px; }
+.pr13 { padding-right: 520px; }	.pr14 { padding-right: 560px; }	.pr15 { padding-right: 600px; }	.pr16 { padding-right: 640px; }
+.pr17 { padding-right: 680px; }	.pr18 { padding-right: 720px; }	.pr19 { padding-right: 760px; }	.pr20 { padding-right: 800px; }
+.pr21 { padding-right: 840px; }	.pr22 { padding-right: 880px; }	.pr23 { padding-right: 920px; }
+
+/* Add these to a column to prepend empty cols. */
+
+.pl1 { padding-left: 40px; }	.pl2 { padding-left: 80px; }	.pl3 { padding-left: 120px; }	.pl4 { padding-left: 160px; }
+.pl5 { padding-left: 200px; }	.pl6 { padding-left: 240px; }	.pl7 { padding-left: 280px; }	.pl8 { padding-left: 320px; }
+.pl9 { padding-left: 360px; }	.pl10 { padding-left: 400px; }	.pl11 { padding-left: 440px; }	.pl12 { padding-left: 480px; }
+.pl13 { padding-left: 520px; }	.pl14 { padding-left: 560px; }	.pl15 { padding-left: 600px; }	.pl16 { padding-left: 640px; }
+.pl17 { padding-left: 680px; }	.pl18 { padding-left: 720px; }	.pl19 { padding-left: 760px; }	.pl20 { padding-left: 800px; }
+.pl21 { padding-left: 840px; }	.pl22 { padding-left: 880px; }	.pl23 { padding-left: 920px; }
+
+/* floating layout
+-------------------------------------------------------------- */
+.left{ float:left; }
+
+.right{ float:right; }
+
+.clear{
+	clear:both;
+	width:0 !important;
+	height:0 !important;
+	min-height:0 !important;
+	min-width:0 !important;
+	overflow:hidden;
+}
