@@ -70,3 +70,7 @@ function show_books($books){
 	}
 
 }
+
+function insert_book($name, $author, $desc, $price=0, $img=''){
+	db_query("INSERT INTO products VALUES(NULL, '$name', '$author', '$desc', $price, '$img')");
+}

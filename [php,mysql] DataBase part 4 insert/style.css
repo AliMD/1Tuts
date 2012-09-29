@@ -41,3 +41,20 @@ div.booklist .price{
 	font-size:16px;
 	margin-top: 10px;
 }
+
+table.frm{
+	margin-top: 20px;
+}
+table.frm td{
+	padding: 5px;
+	text-align: left;
+}
+
+table.frm td.submit{
+	text-align: right;
+}
+
+table.frm textarea{
+	display:block;
+	margin-top: 10px;
+}
