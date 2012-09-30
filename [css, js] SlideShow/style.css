@@ -1,7 +1,7 @@
 /* 01 structure */
 
 section.slideshow {
-	width: 450px;
+	width: 454px;
 }
 
 section.slideshow ul.train{
@@ -14,6 +14,7 @@ section.slideshow ul.train > li{
 	width: 450px;
 	height: 300px;
 	float: left;
+	margin:0 2px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
