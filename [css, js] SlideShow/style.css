@@ -7,6 +7,7 @@ section.slideshow {
 section.slideshow ul.train{
 	left:0;
 	top: 0;
+	-webkit-transition: left 800ms ease-out;
 }
 
 section.slideshow ul.train > li{
