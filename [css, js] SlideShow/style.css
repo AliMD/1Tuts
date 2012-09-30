@@ -1,44 +1,19 @@
+/* 01 structure */
+
 section.slideshow {
-	width     : 460px;
-	height    : 330px;
-	margin-top: 20px;
+	width: 450px;
 }
 
-section.slideshow ul.train {
-	top : 0;
-	left: 0;
-	-webkit-transition: left 900ms ease-in-out;
+section.slideshow ul.train{
+	left:0;
+	top: 0;
 }
 
-section.slideshow ul.train > li {
-	width : 450px;
+section.slideshow ul.train > li{
+	width: 450px;
 	height: 300px;
-	margin-right: 5px;
-	margin-left: 5px;
-	background-size: cover;
+	float: left;
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-position: center center;
-}
-
-section.slideshow menu {
-	padding-left: 5px;
-}
-
-section.slideshow menu li {
-	float : left;
-	width : 30px;
-	height: 10px;
-	cursor: pointer;
-	background   : #333;
-	margin-right : 10px;
-	border-radius: 2px;
-	margin-top: 2px;
-	-webkit-transition: all 700ms;
-}
-
-section.slideshow menu li:hover {
-	height    : 14px;
-	background: #2677AD;
-	margin-top: 0;
-	-webkit-transition: all 300ms;
 }
