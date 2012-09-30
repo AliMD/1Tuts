@@ -11,6 +11,7 @@ section.slideshow ul.train > li{
 	width: 450px;
 	height: 300px;
 	position:absolute;
+	z-index: 1;
 	left:0;
 	top:0;
 	border-radius: 5px;
@@ -25,6 +26,7 @@ section.slideshow menu{
 	position:absolute;
 	left: 8px;
 	bottom: 8px;
+	z-index: 3;
 }
 
 section.slideshow menu li{
@@ -45,3 +47,28 @@ section.slideshow menu li:hover{
 }
 
 /* animation steps */
+
+.train > li {
+	opacity:0;
+	-webkit-transition: all 900ms ease-in-out;
+}
+
+.step1 .train li.pic1{
+	opacity: 1;
+}
+
+.step2 .train li.pic2{
+	opacity: 1;
+}
+
+.step3 .train li.pic3{
+	opacity: 1;
+}
+
+.step4 .train li.pic4{
+	opacity: 1;
+}
+
+.step5 .train li.pic5{
+	opacity: 1;
+}
