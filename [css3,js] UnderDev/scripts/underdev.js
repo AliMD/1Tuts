@@ -34,5 +34,8 @@
 })($)
 
 $(function(){
-	$('.backimg > div').fadeLoop();
+	$('.backimg > div').fadeLoop({
+		duration : 1500,
+		delay : 2000
+	});
 });
