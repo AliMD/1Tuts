@@ -13,6 +13,7 @@ section.slideshow ul.train > li{
 	position:absolute;
 	z-index: 1;
 	left:0;
+	top:0;
 	border-radius: 5px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -47,33 +48,34 @@ section.slideshow menu li:hover{
 
 /* animation steps */
 
-.train > li {
+section.slideshow .train > li {
 	opacity:0;
-	top:-5%;
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transform: scale(0.95);
+	-webkit-transition: all 800ms ease-out;
 }
 
-.step1 .train li.pic1{
-	opacity: 1;
-	top:0%;
+
+.step1 section.slideshow .train > li.pic1 {
+	-webkit-transform: scale(1);
+	opacity:1;
 }
 
-.step2 .train li.pic2{
-	opacity: 1;
-	top:0%;
+.step2 section.slideshow .train > li.pic2 {
+	-webkit-transform: scale(1);
+	opacity:1;
 }
 
-.step3 .train li.pic3{
-	opacity: 1;
-	top:0%;
+.step3 section.slideshow .train > li.pic3 {
+	-webkit-transform: scale(1);
+	opacity:1;
 }
 
-.step4 .train li.pic4{
-	opacity: 1;
-	top:0%;
+.step4 section.slideshow .train > li.pic4 {
+	-webkit-transform: scale(1);
+	opacity:1;
 }
 
-.step5 .train li.pic5{
-	opacity: 1;
-	top:0%;
+.step5 section.slideshow .train > li.pic5 {
+	-webkit-transform: scale(1);
+	opacity:1;
 }
