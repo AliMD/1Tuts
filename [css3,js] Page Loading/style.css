@@ -53,3 +53,15 @@ menu.top a{
 	display: block;
 	padding:13px 20px;
 }
+
+
+/* preload animation
+-------------------------- */
+.container {
+	-webkit-transition: all 1s;
+}
+
+body.preload .container{
+	opacity:0;
+	-webkit-transform: scale(0.2) translateY(-1000px);
+}
