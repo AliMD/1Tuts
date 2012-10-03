@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* browser reset */
+
+@media all {
+
+	/* Global reset of paddings and margins for all HTML elements */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	/* Correction:margin/padding reset caused too small select boxes. */
+	option {
+		padding-left:0.4em;
+	} /* LTR */
+
+	select {
+		padding:1px;
+	}
+
+	/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+	* html body * {
+		overflow:visible;
+	}
+
+	body {
+		font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+		background:#fff;
+		color:#000;
+		text-align:left; /* LTR */
+		line-height: 1;
+	}
+
+	/* avoid visible outlines on DIV containers in Webkit browsers */
+	div {
+		outline:0 none;
+	}
+
+	/* HTML 5 - adjusting visual formatting model to block level */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	/* Hide number or bullet in lists */
+	ol, ul, menu {
+		list-style: none;
+	}
+
+	/* Clear borders for <fieldset> and <img> elements */
+	fieldset, img {
+		border:0 solid;
+	}
+
+	/* hide quotes */
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	/* table fix collapse and spacing */
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	/* Clear borders/outline for links when you click */
+	a:active {
+	 border:0 none;
+	 outline:0 none;
+	}
+
+}
+
+@media print {
+
+	.noprint {
+		display:none !important;
+	}
+
+}

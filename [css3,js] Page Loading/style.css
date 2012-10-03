@@ -1,0 +1,55 @@
+/* Guide
+-------------------------- */
+.container {
+	background-image: url('images/backguid.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	outline: 1px dashed gray;
+
+}
+
+.container > * {
+	outline: 1px dashed blue;
+}
+
+.container > * > * {
+	outline: 2px dotted red;
+}
+
+.container > * > * * {
+	outline: 2px dashed green;
+}
+
+/* Layout
+-------------------------- */
+
+body {
+	background-color: #f4f4f4;
+}
+
+.container {
+	padding: 0 10px;
+}
+
+div.content{
+	min-height: 528px;
+}
+div.content figure.image {
+	min-height: 430px;
+}
+
+/* Menu
+-------------------------- */
+
+menu.top {
+	
+}
+
+menu.top li{
+	float: left;
+}
+
+menu.top a{
+	display: block;
+	padding:13px 20px;
+}
