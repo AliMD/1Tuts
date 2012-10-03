@@ -58,10 +58,16 @@ menu.top a{
 /* preload animation
 -------------------------- */
 .container {
-	-webkit-transition: all 1s;
+	-webkit-transition: all 1s ease-out;
 }
 
 body.preload .container{
 	opacity:0;
 	-webkit-transform: scale(0.2) translateY(-1000px);
+}
+
+body.unload .container{
+	opacity:0;
+	-webkit-transform: translateY(2000px) scale(0.8);
+	-webkit-transition: all 700ms ease-in;
 }
