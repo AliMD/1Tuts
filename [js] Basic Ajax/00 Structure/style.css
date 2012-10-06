@@ -1,0 +1,154 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background-color:#F26531;
+}
+
+div.loading{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color:#F26531;
+	font-size:20px;
+	text-transform:uppercase;
+	color:#FFF;
+	font-family:'Oswald', sans-serif;
+	z-index:2;
+	display:none;
+}
+
+div.loading > div{
+	position:absolute;
+	left:45%;
+	top:40%;
+	text-align:center;
+	letter-spacing:5px;
+}
+
+div.loading img{
+	display:block;
+	
+}
+
+
+
+div.AjaxLoader{
+	position:absolute;
+	top:45%;
+	left:700px;
+	display:none;
+}
+
+div.container{
+	min-width:1000px;
+	/*margin:0 auto;
+	width:980px;*/
+	
+}
+
+div.header{
+	min-height:50px;
+	background-color:#231F20;
+	color:#F26531;
+}
+div.left{
+	float:left;
+	min-height:500px;
+	width:250px;
+	margin-left:20px;
+}
+div.left-top{
+	height:72px;
+	width:300px;
+	color:#231F20;
+	font-size:50px;
+	line-height:70px;
+	border-color:#231F20;
+	border-style:solid;
+	border-width:10px 0;
+	text-align:center;
+	margin:20px 0;
+	font-family:'Oswald', sans-serif;
+	text-transform:uppercase;
+	letter-spacing:-5px;
+
+}
+div.menu{
+	padding:5px;
+}
+div.menu ul{
+	list-style-type:none;
+	height:200px;
+	width:205px;
+	padding:5px;
+	border-color:#231F20;
+	border-style:solid;
+	border-width:0 0 10px 0;
+}
+div.menu ul li{
+	
+}
+div.menu ul li a{
+	width:190px;
+	height:20px;
+	display:block;
+	text-decoration:none;
+	font-weight:bold;
+	color:#231F20;
+	font-family:'Oswald', sans-serif;
+	font-size:16px;
+	padding:5px 5px 5px 5px;
+	text-transform:uppercase;
+}
+div.menu ul li:hover a{
+	background-color:#231F20;
+	color:#FFF;
+	text-align:right;
+}
+div.left-down{
+	background-color:#231F20;
+	color:#F26531;
+	font-size: 20px;
+	letter-spacing:5px;
+	text-align:center;
+	font-weight:bold;
+	width:180px;
+	line-height:180px;
+	margin-bottom:4px;
+	text-transform:uppercase;
+	-moz-border-radius:90px;
+	-webkit-border-radius:90px;
+	-o-border-radius:90px;
+	border-radius:90px;
+	margin-top:60px;
+}
+
+div.left-down:hover{
+	background-color:#FFFFFF;
+	color:F26531;
+}
+div.content{
+	margin-left:350px;
+	padding:20px;
+	
+	min-height:700px;
+	
+}
+div.content div.top-content{
+	width:inherit;
+	height:100px;
+	color:#FFFFFF;
+	font-family:'Oswald', sans-serif;
+	font-size:32px;
+	text-transform:uppercase;
+	letter-spacing:-5px;
+	margin-bottom:30px;
+	
+}
+div.footer{
+	clear:both;
+}
