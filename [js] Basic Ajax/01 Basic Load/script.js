@@ -3,6 +3,12 @@ $(function(){
 		opacity:1,
 		display:'block'
 	});
+
+	$('div.menu a').click(function(){
+		var url = $(this).attr('href');
+		$('.main-content').load(url+' .main-content');
+		return false;
+	});
 });
 
 window.onload = function(){
