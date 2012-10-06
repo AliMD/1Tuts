@@ -15,24 +15,6 @@
 
 		var ctx = cnv.getContext('2d');
 
-		function triangle(x,y,w,h,style){
-
-			ctx.beginPath(); 
-
-			ctx.moveTo(x,y);
-
-			ctx.lineTo(x+w,y);
-
-			ctx.lineTo(x+w/2,y+h);
-
-			ctx.closePath();
-
-			ctx.fillStyle = style;
-
-			ctx.fill();
-
-		}
-
 		var painting = false;
 
 		cnv.onmousemove = function (event){
@@ -51,7 +33,7 @@
 			ctx.beginPath();
 			ctx.moveTo(x,y);
 			ctx.strokeStyle=randColor();
-			ctx.lineWidth=Math.random()*10;
+			ctx.lineWidth=rand(1,10);
 			painting = true;
 		}
 
@@ -59,10 +41,14 @@
 			painting = false;
 		}
 
+		function rand(a,b){
+			return Math.floor(Math.random()*(b-a+1))+a;
+		}
+
 		function randColor(){
 			var c='#';
 			for(var i=0;i<6;i++){
-				c+=Math.floor(Math.random()*16).toString(16);
+				c+=rand(0,16).toString(16);
 			}
 			return c;
 		}

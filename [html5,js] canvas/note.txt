@@ -4,7 +4,7 @@ var	--> variable
 
 function  --> engar yek dastoor ezafe mikone
 
-document
+document --> access to page document ! (kh kh kh)
 
 getElementById  --> get elements by id ! (tuts 2 line 14)
 
@@ -12,17 +12,18 @@ getContext('2d')  --> dastrasi be renderEngine yek canvas
 
 moveTo  --> move pen
 
-beginPath()
+lineTo  --> draw line
+
+beginPath() --> begin to draw new path
 
 closePath()  --> connect end to start
 
-
 strokeStyle  --> style line
 
-lineWidth
+lineWidth --> Width of line
 
-fillStyle  -->
+fillStyle  --> style fill
 
 stroke()  --> draw line
 
-fill()  --> 
+fill()  --> fill !

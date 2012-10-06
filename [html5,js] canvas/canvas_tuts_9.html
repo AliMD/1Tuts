@@ -15,24 +15,6 @@
 
 		var ctx = cnv.getContext('2d');
 
-		function triangle(x,y,w,h,style){
-
-			ctx.beginPath(); 
-
-			ctx.moveTo(x,y);
-
-			ctx.lineTo(x+w,y);
-
-			ctx.lineTo(x+w/2,y+h);
-
-			ctx.closePath();
-
-			ctx.fillStyle = style;
-
-			ctx.fill();
-
-		}
-
 		ctx.strokeStyle = 'white';
 
 		var painting = false;
