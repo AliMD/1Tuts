@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="1styles.css" />
+	<style type="text/css">
+		.leftmenu{
+			background-color: gray;
+			-webkit-transition:top 800ms;
+		}
+		.btn{
+			position: absolute;
+			text-align: center;
+			left:0;
+			right: 0;
+			bottom: 10px;
+			cursor: pointer;
+		}
+
+		#anihelper.dn .leftmenu {
+			top:20px;
+		}
+
+		#anihelper.dn .btn-dn{
+			display: none;
+		}
+
+		#anihelper.up .leftmenu {
+			top:-350px;
+		}
+
+		#anihelper.up .btn-up{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="anihelper" class="dn">
+		<div class="leftmenu w4 h40 ml1 rel">
+			<div class="btn btn-up" onclick=" document.getElementById('anihelper').className = 'up' ">UP</div>
+			<div class="btn btn-dn" onclick=" document.getElementById('anihelper').className = 'dn' " >DN</div>
+		</div>
+	</div>
+</body>
+</html>
