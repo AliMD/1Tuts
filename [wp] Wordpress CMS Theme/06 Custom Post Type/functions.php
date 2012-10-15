@@ -60,8 +60,8 @@ function product_init (){
 		'capability_type' => 'post',
 		'has_archive' => true,
 		'hierarchical' => false,
-		'menu_position' => 25,
-		'menu_icon' => get_bloginfo('template_url') . '/images/product_icon.png',
+		'menu_position' => 5,
+		'menu_icon' => get_bloginfo('template_url') . '/images/product_icon.png', // 16x16
 		'supports' => array('title','editor','thumbnail','excerpt')
 	);
 
@@ -86,6 +86,7 @@ function product_price_box(){
 	$price = 0;
 	if ( isset($_REQUEST['post']) ) { // after first post save
 		$price = get_post_meta((int)$_REQUEST['post'],'product_price',true);
+		// http://codex.wordpress.org/Function_Reference/get_post_meta
 	}
 	echo "<label for='product_price_text'>Product Price</label>";
 	echo "<input id='product_price_text' class='widefat' name='product_price_text' size='20' type='text' value='$price' />";
