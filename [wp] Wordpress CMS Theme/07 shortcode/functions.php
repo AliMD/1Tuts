@@ -105,3 +105,35 @@ function product_save_meta($post_id){
 		}
 	}
 }
+
+
+
+// Step 4: Add shortcode for product
+
+add_shortcode('products', 'product_list');
+
+function product_list($args){
+	if(!@$args['cat']) $args['cat'] = '';
+
+	$products = new WP_Query(array(
+		'post_type' => 'product',
+		'category_name' => $args['cat']
+	));
+
+	$html = '<h3>Product List</h3>';
+
+	$html .= '<ul>';
+
+	while($products->have_posts()){
+		$products->the_post();
+
+		$title = get_the_title();
+		$url = get_permalink();
+
+		$html .= "<li><a href='$url'>$title</a></li>";
+	}
+
+	$html .= '</ul>';
+
+	return $html;
+}
