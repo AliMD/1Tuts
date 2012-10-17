@@ -62,13 +62,14 @@ function product_init (){
 		'hierarchical' => false,
 		'menu_position' => 5,
 		'menu_icon' => get_bloginfo('template_url') . '/images/product_icon.png', // 16x16
-		'supports' => array('title','editor','thumbnail','excerpt')
+		'supports' => array('title','editor','thumbnail','excerpt'),
+		'taxonomies' => array('category', 'post_tag')
 	);
 
 	register_post_type ('product',$args);
 	// http://codex.wordpress.org/Function_Reference/register_post_type
 
-	register_taxonomy_for_object_type('category', 'product');
+	//register_taxonomy_for_object_type('category', 'product');
 	// http://codex.wordpress.org/Taxonomies
 	// http://codex.wordpress.org/Function_Reference/register_taxonomy_for_object_type
 }
@@ -113,8 +114,9 @@ function product_save_meta($post_id){
 add_shortcode('products', 'product_list');
 
 function product_list($args){
-	if(!@$args['cat']) $args['cat'] = '';
 
+	if(!@$args['cat']) $args['cat']='';
+	
 	$products = new WP_Query(array(
 		'post_type' => 'product',
 		'category_name' => $args['cat']
@@ -136,4 +138,13 @@ function product_list($args){
 	$html .= '</ul>';
 
 	return $html;
+}
+
+
+// shortcode for contact us
+
+add_shortcode('contactus','contact_us');
+
+function contact_us(){
+	return file_get_contents( get_template_directory() . '/contact.html');
 }
