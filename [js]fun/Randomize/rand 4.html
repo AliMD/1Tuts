@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color: black;
+	}
+	.container {
+		width: 950px;
+		margin: 50px auto;
+	}
+	div.box div {
+		width: 30px;
+		height: 30px;
+		margin:3px;
+		float: left;
+		border-radius: 3px;
+		-webkit-transition: all 200ms;
+	}
+	div.box div.state1 {
+		background-color: darkmagenta;
+	}
+
+	div.box div.state2 {
+		background-color: darkorange;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<script type="text/javascript">
+				var max = 416;
+
+				for(i=0; i<max; i++){
+					document.write('<div></div>');
+				}
+
+				var divs = document.getElementsByClassName('box').item(0).getElementsByTagName('div');
+
+				function choose1() {
+					r=Math.floor(Math.random()*max);
+
+					if(divs.item(r).className == ''){
+						divs.item(r).className = 'state1';
+					} else if(divs.item(r).className == 'state1') {
+						divs.item(r).className = 'state2';
+					}else{
+						divs.item(r).className = '';
+					}
+				}
+
+				setInterval(choose1,1);
+				
+			</script>
+		</div>
+	</div>
+</body>
+</html>

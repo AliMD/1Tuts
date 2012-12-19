@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color: black;
+	}
+	.container {
+		width: 950px;
+		margin: 50px auto;
+	}
+	div.box div {
+		width: 50px;
+		height: 50px;
+		background-color: darkmagenta;
+		margin:3px;
+		float: left;
+		border-radius: 3px;
+		-webkit-transition: all 250ms;
+	}
+	div.box div.hover {
+		background-color: darkorange;
+		-webkit-transform: rotate(90deg);
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<script type="text/javascript">
+				var max = 160;
+
+				for(i=0; i<max; i++){
+					document.write('<div></div>');
+				}
+
+				var divs = document.getElementsByClassName('box').item(0).getElementsByTagName('div');
+
+				function choose1() {
+					r=Math.floor(Math.random()*max);
+
+					if(divs.item(r).className == 'hover'){
+						choose1();
+					} else {
+						divs.item(r).className = 'hover';
+					}
+				}
+
+				setInterval(choose1,50);
+				
+			</script>
+		</div>
+	</div>
+</body>
+</html>

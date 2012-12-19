@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color: black;
+	}
+	.container {
+		width: 950px;
+		margin: 50px auto;
+	}
+	div.box div {
+		width: 30px;
+		height: 30px;
+		margin: 4px;
+		float: left;
+		border-radius: 10px;
+		-webkit-transition: all 200ms;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<script type="text/javascript">
+				var max = 425;
+
+				for(i=0; i<max; i++){
+					document.write('<div></div>');
+				}
+
+				var divs = document.getElementsByClassName('box').item(0).getElementsByTagName('div');
+
+				function choose1() {
+					var r = Math.floor(Math.random()*max);
+					var h = Math.floor(Math.random()*360);
+					divs.item(r).style.backgroundColor = "hsl(" + h + ", 90%, 50%)";
+				}
+
+				setInterval(choose1,1);
+				
+			</script>
+		</div>
+	</div>
+</body>
+</html>
