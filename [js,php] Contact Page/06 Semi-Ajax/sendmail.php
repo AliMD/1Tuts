@@ -33,7 +33,7 @@
 					$admin,
 					"mydomain.com contact : $subject",
 					$text,
-					"From:contact@thisdomain.com\r\nReply-To:$name <$email>" );
+					"From:contact@thisdomain.com\r\nReply-To:$name <$email>" )
 			){
 				echo '<h2 class="ok">Mail sent</h2>';
 			}else{

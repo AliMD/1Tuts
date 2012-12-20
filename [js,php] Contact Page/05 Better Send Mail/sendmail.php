@@ -20,7 +20,7 @@
 					$admin,
 					"mydomain.com contact : $subject",
 					$text,
-					"From:contact@thisdomain.com\r\nReply-To:$name <$email>" );
+					"From:contact@thisdomain.com\r\nReply-To:$name <$email>" )
 			){
 				echo '<h2>Mail sent</h2>';
 			}else{
