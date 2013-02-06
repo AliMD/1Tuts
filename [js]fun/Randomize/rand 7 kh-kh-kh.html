@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color: black;
+	}
+	.container {
+		width: 1000px;
+		margin: 50px auto;
+	}
+	div.box div {
+		width: 19px;
+		height: 19px;
+		border: 1px solid black;
+		float: left;
+		border-radius: 4px;
+		
+		opacity: 0;
+		-moz-transition: all 1500ms;
+	}
+	div.box div:hover{
+		opacity: 1;
+		-moz-transition: all 10ms;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<script type="text/javascript">
+				var max = 1000/20*12+2;
+
+				for(i=0; i<max; i++){
+					document.write('<div></div>');
+				}
+
+				var divs = document.getElementsByClassName('box').item(0).getElementsByTagName('div');
+
+				for(var i=0;i<max;i++) {
+					var h = Math.floor(Math.random()*360);
+					divs.item(i).style.backgroundColor = "hsl(" + h + ", 90%, 50%)";
+				}
+				
+			</script>
+		</div>
+	</div>
+</body>
+</html>
