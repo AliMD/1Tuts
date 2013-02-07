@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color: black;
+	}
+	#score{
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		font-size: 20px;
+		color: #eee;
+	}
+	div.box div {
+		width: 50px;
+		height: 50px;
+		background-color: white;
+		margin:5px;
+		position: fixed;
+		top:-60px;
+		cursor: pointer;
+		-webkit-transition: top 4s linear, opacity 300ms;
+		   -moz-transition: top 4s linear, opacity 300ms;
+		    -ms-transition: top 4s linear, opacity 300ms;
+		     -o-transition: top 4s linear, opacity 300ms;
+		        transition: top 4s linear, opacity 300ms;
+	}
+	</style>
+</head>
+<body>
+	<div id="score">Score : --</div>
+	<div class="box">
+		<script type="text/javascript">
+			function rnd(a,b){
+				return Math.floor(Math.random()*(b-a+1))+a;
+			}
+			function hsl(h,s,l){
+				return "hsl("+h+","+s+"%,"+l+"%)";
+			}
+
+			var max = 100;
+
+			for(i=0; i<max; i++){
+				document.write('<div></div>');
+			}
+
+			var divs = document.getElementsByClassName('box').item(0).getElementsByTagName('div');
+
+			for(var i=0;i<max;i++){
+				divs.item(i).style.left = rnd(10,90)+'%';
+				divs.item(i).style.backgroundColor = hsl(rnd(0,360),rnd(50,80),50);
+				divs.item(i).onmousedown = function(){
+					this.style.opacity=0;
+					addPoint();
+				}
+			}
+
+			i=0;
+
+			var timer = setInterval(function(){
+				divs.item(i).style.top = '101%';
+				i++;
+				if(i>=max) clearInterval(timer);
+			},1000);
+
+			var score = 0;
+			function addPoint(){
+				score++;
+				document.getElementById('score').innerHTML = 'Score : '+score+' / '+max;
+			}
+			
+		</script>
+	</div>
+</body>
+</html>

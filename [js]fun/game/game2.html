@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body {
+		background-color: black;
+	}
+	div.box div {
+		width: 50px;
+		height: 50px;
+		background-color: white;
+		margin:5px;
+		position: fixed;
+		-webkit-transition: top 5s linear;
+		   -moz-transition: top 5s linear;
+		    -ms-transition: top 5s linear;
+		     -o-transition: top 5s linear;
+		        transition: top 5s linear;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<script type="text/javascript">
+			function rnd(a,b){
+				return Math.floor(Math.random()*(b-a+1))+a;
+			}
+			function hsl(h,s,l){
+				return "hsl("+h+","+s+"%,"+l+"%)";
+			}
+
+			var max = 10;
+
+			for(i=0; i<max; i++){
+				document.write('<div></div>');
+			}
+
+			var divs = document.getElementsByClassName('box').item(0).getElementsByTagName('div');
+
+			for(var i=0;i<max;i++){
+				divs.item(i).style.top = '0%'; // 0 for debug
+				divs.item(i).style.left = rnd(10,90)+'%';
+				divs.item(i).style.backgroundColor = hsl(rnd(0,360),rnd(50,80),50);
+			}
+
+			divs.item(5).style.top = '101%';
+			
+			
+		</script>
+	</div>
+</body>
+</html>
