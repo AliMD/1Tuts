@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title></title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: #FFF;
+		}
+		.box{
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			box-shadow: inset 0px 0px 5px 1px black;
+			font-size: 120px;
+			text-align: center;
+			line-height: 150px;
+			-moz-perspective:700px;
+			
+		}
+		.box div{
+			background-color: darkmagenta;
+
+			width: inherit;
+			height: inherit;
+			position: absolute;
+			left: 0;
+			top: 0;
+			-moz-backface-visibility:hidden;
+			-moz-transition: -moz-transform 2000ms;
+
+		}
+		.box div.da{
+			-moz-transform: rotateY(0deg);
+		}
+		.box div.db{
+			-moz-transform: rotateY(180deg);
+		}
+		.box:hover div.da{
+			-moz-transform: rotateY(180deg);
+		}
+		.box:hover div.db{
+			-moz-transform: rotateY(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="da">A</div>
+		<div class="db">B</div>
+	</div>
+</body>
+</html>
