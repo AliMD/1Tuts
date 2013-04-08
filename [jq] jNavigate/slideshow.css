@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/* SlideShow
+-------------------------------------------------- */
+
+div.container{
+	width       : 980px;
+	margin      : 0 auto;
+	padding-top : 1px;
+}
+
+div.slideshow{
+	width      : 450px;
+	height     : 324px;
+	margin     : 30px auto 0;
+	overflow   : hidden;
+	position   : relative;
+	background-image    : url('images/loading.gif');
+	background-repeat   : no-repeat;
+	background-position : center center;
+}
+
+div.slideshow div.train{
+	width    : 10000px;
+	height   : 300px;
+	position : absolute;
+	left     : 0;
+	top      : 0;
+	-webkit-transition : left 800ms ease-in-out;
+	-moz-transition : left 800ms ease-in-out;
+}
+
+div.slideshow div.train > div{
+	width  : 450px;
+	height : inherit;
+	float  : left;
+	border-radius       : 4px;
+	background-size     : cover;
+	background-repeat   : no-repeat;
+	background-position : left top;
+}
+
+
+/* Navigation
+-------------------------------------------------- */
+
+div.slideshow ul.btns{
+	height     : 13px;
+	list-style : none;
+	position   : absolute;
+	left       : 0;
+	bottom     : 0;
+}
+
+div.slideshow ul.btns li{
+	float  : left;
+	margin-right       : 5px;
+	
+}
+
+div.slideshow ul.btns a{
+	display: block;
+	width  : 30px;
+	height : 10px;
+	border-radius      : 2px;
+	background-color   : #333;
+	-webkit-transition : all 1100ms;
+}
+
+div.slideshow ul.btns li:hover a,
+div.slideshow ul.btns li a.active{
+	height           : 16px;
+	margin-top       : -3px;
+	background-color : #2677AD;
+	-webkit-transition-duration : 200ms;
+	-moz-transition-duration : 200ms;
+}
+
+div.slideshow div.previous,
+div.slideshow div.next{
+	position : absolute;
+	top      : 135px;
+	width    : 30px;
+	height   : 30px;
+	opacity  : 0;
+	cursor   : pointer;
+	background-image   : url('images/arrow.png');
+	background-repeat  : no-repeat;
+	-webkit-transition : opacity 500ms;
+	-moz-transition : opacity 500ms;
+}
+
+div.slideshow:hover div.previous,
+div.slideshow:hover div.next{
+	opacity : 1;
+}
+
+div.slideshow div.previous{
+	left : 10px;
+	background-position : 0px 0px;
+}
+div.slideshow div.next{
+	right : 10px;
+	background-position : -30px 0px;
+}
