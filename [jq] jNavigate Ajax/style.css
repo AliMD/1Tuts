@@ -1,0 +1,21 @@
+.container{
+	width: 600px;
+	margin: 0 auto;
+}
+nav{
+	margin:20px 0;
+}
+nav a{
+	text-transform: capitalize;
+	padding-right: 20px;
+}
+
+.page{
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.page h1{
+	margin-top: 0;
+	text-transform: capitalize;
+}
