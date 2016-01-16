@@ -27,12 +27,13 @@ HTML is a **markup** language for **describing** web documents (web pages).
 
 ##Example Explained
 * The **DOCTYPE** declaration defines the document type to be HTML
-* The text between **<html>** and **</html>** describes an HTML document
-* The text between **<head>** and **</head>** provides information about the document
-* The text between **<title>** and **</title>** provides a title for the document
-* The text between **<body>** and **</body>** describes the visible page content
-* The text between **<h1>** and **</h1>** describes a heading
-* The text between **<p>** and **</p>** describes a paragraph
+* The text between `<html>` and `</html>` describes an HTML document
+* The text between `<head>` and `</head>` provides information about the document
+* The text between `<title>` and `</title>` provides a title for the document
+* The text between `<body>` and `</body>` describes the visible page content
+* The text between `<h1>` and `</h1>` describes a heading
+* The text between `<p>` and `</p>` describes a paragraph
+
 Using this description, a web browser can display a document with a heading and a paragraph.  
 
 ##HTML Tags
@@ -40,9 +41,10 @@ HTML tags are **keywords** (tag names) surrounded by **angle brackets**:
 ```
 <tagname>content</tagname>
 ```
-* HTML tags normally come **in pairs** like <p> and </p>
+* HTML tags normally come **in pairs** like `<p>` and `</p>`
 * The first tag in a pair is the **start tag**, the second tag is the **end tag**
 * The end tag is written like the start tag, but with a **slash** before the tag name
+
 **Note:**	The start tag is often called the opening tag. The end tag is often called the closing tag.
 
 ##Web Browsers
