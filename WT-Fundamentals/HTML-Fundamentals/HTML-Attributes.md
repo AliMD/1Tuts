@@ -47,6 +47,7 @@ HTML links are defined with the ```<a>``` tag. The link address is specified in 
 <a href="http://www.google.com">This is a link</a>
 ```
 <a class="jsbin-embed" href="http://jsbin.com/purayu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+
 You will learn more about links and the <a> tag later in this tutorial.
 
 ##Size Attributes
@@ -57,6 +58,7 @@ The filename of the source (**src**), and the size of the image (**width** and *
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
 ```
 <a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+
 The image size is specified in pixels: width="104" means 104 screen pixels wide.
 You will learn more about images and the <img> tag later in this tutorial.
 
@@ -75,6 +77,7 @@ The title attribute can be written with upper or lower case like **Title** and/o
 W3C **recommends** lowercase in HTML4, and **demands** lowercase for stricter document types like XHTML.
 
 :sparkles: Lower case is the most common. Lower case is easier to type.
+
 :sparkles: At W3Schools we always use lower case attribute names.
 
 ##We Suggest: Always Quote Attribute Values
@@ -85,6 +88,7 @@ The **href** attribute, demonstrated above, can be written as:
 <a href=http://www.w3schools.com>
 ```
 <a class="jsbin-embed" href="http://jsbin.com/purayu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+
 W3C **recommends** quotes in HTML4, and **demands** quotes for stricter document types like XHTML.
 Sometimes it is **necessary** to use quotes. This will not display correctly, because it contains a space:
 ###Example
@@ -94,6 +98,7 @@ Sometimes it is **necessary** to use quotes. This will not display correctly, be
 <a class="jsbin-embed" href="http://jsbin.com/purayu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 :sparkles: Using quotes are the most common. Omitting quotes can produce errors. 
+
 :sparkles: At W3Schools we always use quotes around attribute values.
 
 ##Single or Double Quotes?
@@ -115,4 +120,7 @@ Or vice versa:
 * At W3Schools we always use **lowercase** HTML attribute names
 * At W3Schools we always **quote** attributes with double quotes
 
-
+##HTML Attributes
+Below is an alphabetical list of some attributes often used in HTML:
+![Image of attributes](http://i.imgsafe.org/a882be5.jpg)
+A complete list of all attributes for each HTML element, is listed in our: HTML Tag Reference.
