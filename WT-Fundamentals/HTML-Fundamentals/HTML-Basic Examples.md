@@ -20,7 +20,7 @@ The visible part of the HTML document is between ```<body>``` and ```</body>```.
 </body>
 </html>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ##HTML Headings
 HTML headings are defined with the ```<h1>``` to ```<h6>``` tags:
@@ -30,7 +30,7 @@ HTML headings are defined with the ```<h1>``` to ```<h6>``` tags:
 <h2>This is a heading</h2>
 <h3>This is a heading</h3>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ##HTML Paragraphs
 HTML paragraphs are defined with the ```<p>``` tag:
@@ -39,7 +39,7 @@ HTML paragraphs are defined with the ```<p>``` tag:
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ##HTML Links
 HTML links are defined with the ```<a>``` tag:
@@ -47,7 +47,7 @@ HTML links are defined with the ```<a>``` tag:
 ```html
 <a href="http://www.w3schools.com">This is a link</a>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 The link's destination is specified in the href attribute. 
 Attributes are used to provide additional information about HTML elements.
 
@@ -58,6 +58,6 @@ The source file (src), alternative text (alt), and size (width and height) are p
 ```html
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 :sparkles: You will learn more about attributes in a later chapter.
