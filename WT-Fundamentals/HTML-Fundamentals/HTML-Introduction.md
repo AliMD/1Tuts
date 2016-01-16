@@ -9,7 +9,7 @@ HTML is a **markup** language for **describing** web documents (web pages).
 * Each HTML tag **describes** different document content
 
 ##HTML Example
-###[A small HTML document](https://jsbin.com/kahuze/edit?html,output):
+###A small HTML document:
 ```html
 <!DOCTYPE html>
 <html>
@@ -23,6 +23,7 @@ HTML is a **markup** language for **describing** web documents (web pages).
 </body>
 </html>
 ```
+[Try It Yourself](https://jsbin.com/kahuze/edit?html,output)
 
 ##Example Explained
 * The **DOCTYPE** declaration defines the document type to be HTML
