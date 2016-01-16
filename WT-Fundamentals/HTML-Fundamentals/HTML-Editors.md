@@ -46,8 +46,3 @@ Open the saved HTML file in your favorite browser. The result will look much lik
 ![Image of Chrome](http://www.w3schools.com/html/img_chrome.png)
 
 :sparkles: To open a file in a browser, double click on the file, or right-click, and choose open with.
-
-##HTML Page Structure
-bla bla ...  
-
-...
