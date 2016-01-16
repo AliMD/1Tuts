@@ -5,5 +5,5 @@
 - [x] HTML Basic Examples
 - [ ] HTML Validation
 - [ ] HTML Doctype
-- [ ] HTML Elements
-- [ ] HTML Attributes
+- [x] HTML Elements
+- [x] HTML Attributes
