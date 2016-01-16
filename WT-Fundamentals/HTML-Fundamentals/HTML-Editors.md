@@ -36,9 +36,10 @@ Select **File** **>** **Save as** in the Notepad menu.
 Name the file "index.html" or any other name ending with html or htm.
 UTF-8 is the preferred encoding for HTML files.
 ANSI encoding covers US and Western European characters only.
+
 ![Image of Notepad2](http://www.w3schools.com/html/img_saveas.png)
 
-:sparkles: You can use either .htm or .html as file extension. There is no difference, it is up to you.
+ :sparkles: You can use either .htm or .html as file extension. There is no difference, it is up to you.
 
 ##Step 4: View HTML Page in Your Browser
 Open the saved HTML file in your favorite browser. The result will look much like this:
