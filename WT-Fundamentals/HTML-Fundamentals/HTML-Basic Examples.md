@@ -23,7 +23,7 @@ The visible part of the HTML document is between **<body>** and **</body>**.
 <a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ##HTML Headings
-HTML headings are defined with the **<h1>** to **<h6>** tags:
+HTML headings are defined with the <h1> to <h6> tags:
 ###Example
 ```html
 <h1>This is a heading</h1>
@@ -33,7 +33,7 @@ HTML headings are defined with the **<h1>** to **<h6>** tags:
 <a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ##HTML Paragraphs
-HTML paragraphs are defined with the **<p>** tag:
+HTML paragraphs are defined with the <p> tag:
 ###Example
 ```html
 <p>This is a paragraph.</p>
