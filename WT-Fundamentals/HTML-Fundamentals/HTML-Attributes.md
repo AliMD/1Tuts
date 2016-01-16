@@ -123,4 +123,4 @@ Or vice versa:
 ##HTML Attributes
 Below is an alphabetical list of some attributes often used in HTML:
 ![Image of attributes](http://i.imgsafe.org/a882be5.jpg)
-A complete list of all attributes for each HTML element, is listed in our: HTML Tag Reference.
+A complete list of all attributes for each HTML element, is listed in our: [HTML Tag Reference](http://www.w3schools.com/tags/default.asp).
