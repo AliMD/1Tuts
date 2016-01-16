@@ -13,6 +13,7 @@ HTML is a **markup** language for **describing** web documents (web pages).
 ```html
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Page Title</title>
 </head>
@@ -21,9 +22,10 @@ HTML is a **markup** language for **describing** web documents (web pages).
   <h1>My First Heading</h1>
   <p>My first paragraph.</p>
 </body>
+
 </html>
 ```
-[Try It Yourself](https://jsbin.com/kahuze/edit?html,output)
+[Try It Yourself][simple html]
 
 ##Example Explained
 * The **DOCTYPE** declaration defines the document type to be HTML
@@ -44,8 +46,9 @@ HTML tags are **keywords** (tag names) surrounded by **angle brackets**:
 * HTML tags normally come **in pairs** like `<p>` and `</p>`
 * The first tag in a pair is the **start tag**, the second tag is the **end tag**
 * The end tag is written like the start tag, but with a **slash** before the tag name
-
+[//]: # (TODO: add tag vs elements)
 **Note:**	The start tag is often called the opening tag. The end tag is often called the closing tag.
+
 
 ##Web Browsers
 The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.
@@ -106,3 +109,11 @@ HTML 3.2 | 1997
 HTML 4.01 | 1999
 XHTML | 2000
 HTML5 | 2014
+
+
+Refrences: [Mozilla], [WebPlatform], [w3schools]
+
+[simple html]: http://jsbin.com/johave/embed?html,output
+[Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
+[WebPlatform]: https://docs.webplatform.org/wiki/html
+[w3schools]: http://www.w3schools.com/html/
