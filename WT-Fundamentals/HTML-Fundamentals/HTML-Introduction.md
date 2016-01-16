@@ -10,17 +10,16 @@ HTML is a **markup** language for **describing** web documents (web pages).
 
 ##HTML Example
 ###[A small HTML document](https://jsbin.com/kahuze/edit?html,output):
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+  <title>Page Title</title>
 </head>
+
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
 </body>
 </html>
 ```
@@ -69,7 +68,7 @@ There are different document types on the web.
 To display a document correctly, the browser must know both type and version.
 
 The doctype declaration is not case sensitive. All cases are acceptable:
-```
+```html
 <!DOCTYPE html>
 
 <!DOCTYPE HTML>
@@ -81,11 +80,17 @@ The doctype declaration is not case sensitive. All cases are acceptable:
 
 ##Common Declarations
 ###HTML5
-```<!DOCTYPE html>```
+```html
+<!DOCTYPE html>
+```
 ###HTML 4.01
-```<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">```
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+```
 ###XHTML 1.0
-```<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">```
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+```
 
 **Note:**	All tutorials and examples at W3Schools use HTML5.
 
