@@ -62,3 +62,12 @@ The source file (src), alternative text (alt), and size (width and height) are p
 <a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 :sparkles: You will learn more about attributes in a later chapter.
+
+---
+Refrences: [Mozilla], [WebPlatform], [W3schools]
+
+[WebStorm]: http://www.jetbrains.com/webstorm/
+[Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
+[WebPlatform]: https://docs.webplatform.org/wiki/html
+[W3schools]: http://www.w3schools.com/html/
+
