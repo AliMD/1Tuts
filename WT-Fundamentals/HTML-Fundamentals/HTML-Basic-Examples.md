@@ -20,7 +20,7 @@ The visible part of the HTML document is between ```<body>``` and ```</body>```.
 </body>
 </html>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+[Try it Yourself][simplehtml1]
 
 ##HTML Headings
 HTML headings are defined with the ```<h1>``` to ```<h6>``` tags:
@@ -30,7 +30,7 @@ HTML headings are defined with the ```<h1>``` to ```<h6>``` tags:
 <h2>This is a heading</h2>
 <h3>This is a heading</h3>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+[Try it Yourself][simplehtml2]:
 
 ##HTML Paragraphs
 HTML paragraphs are defined with the ```<p>``` tag:
@@ -39,15 +39,15 @@ HTML paragraphs are defined with the ```<p>``` tag:
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+[Try it Yourself][simplehtml3]
 
 ##HTML Links
 HTML links are defined with the ```<a>``` tag:
 ###Example
 ```html
-<a href="http://www.w3schools.com">This is a link</a>
+<a href="http://google.com">This is a link</a>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+[Try it Yourself][simplehtml4]
 
 The link's destination is specified in the href attribute. 
 Attributes are used to provide additional information about HTML elements.
@@ -57,9 +57,9 @@ HTML images are defined with the <img> tag.
 The source file (src), alternative text (alt), and size (width and height) are provided as attributes:
 ###Example
 ```html
-<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Image" width="254" height="142">
 ```
-<a class="jsbin-embed" href="http://jsbin.com/lowoxu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+[Try it Yourself][simplehtml5]
 
 :sparkles: You will learn more about attributes in a later chapter.
 
@@ -70,4 +70,8 @@ Refrences: [Mozilla], [WebPlatform], [W3schools]
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
 [WebPlatform]: https://docs.webplatform.org/wiki/html
 [W3schools]: http://www.w3schools.com/html/
-
+[simplehtml1]: http://jsbin.com/kupuga/edit?html,output
+[simplehtml2]: http://jsbin.com/xibexek/edit?html,output
+[simplehtml3]: http://jsbin.com/masimu/edit?html,output
+[simplehtml4]: http://jsbin.com/badixi/edit?html,output
+[simplehtml5]: http://jsbin.com/venehu/edit?html,output
