@@ -1,14 +1,11 @@
 #WTF HTML Basic Examples
 
-Don't worry if these examples use tags you have not learned.
-
+Don't worry if these examples use tags you have not learned.  
 You will learn about them in the next chapters.
 
 ##HTML Documents
-All HTML documents must start with a type declaration: `<!DOCTYPE html>`.
-
-The HTML document itself begins with `<html>` and ends with `</html>`.
-
+All HTML documents must start with a type declaration: `<!DOCTYPE html>`.  
+The HTML document itself begins with `<html>` and ends with `</html>`.  
 The visible part of the HTML document is between `<body>` and `</body>`.
 ###Example
 ```html
@@ -54,13 +51,11 @@ HTML links are defined with the `<a>` tag:
 ```
 [Try it Yourself][a tag]
 
-The link's destination is specified in the **href attribute**. 
-
+The link's destination is specified in the **href attribute**.   
 Attributes are used to provide additional information about HTML elements.
 
 ##HTML Images
-HTML images are defined with the `<img>` tag.
-
+HTML images are defined with the `<img>` tag.  
 The source file (**src**), alternative text (**alt**), and size (**width** and **height**) are provided as **attributes**:
 ###Example
 ```html
@@ -73,11 +68,11 @@ The source file (**src**), alternative text (**alt**), and size (**width** and *
 ---
 Refrences: [Mozilla], [WebPlatform], [W3schools]
 
-[body sample]: http://atom.io/
-[h1 tags]: http://www.sublimetext.com/
-[p tag]: http://www.sublimetext.com/
-[a tag]: http://www.sublimetext.com/
-[img tag]: http://www.sublimetext.com/
+[body sample]: http://jsbin.com/sacane/embed?html,output
+[h1 tags]: http://jsbin.com/maxole/embed?html,output
+[p tag]: http://jsbin.com/mitota/embed?html,output
+[a tag]: http://jsbin.com/xujubu/embed?html,output
+[img tag]: http://jsbin.com/jefehi/embed?html,output
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
 [WebPlatform]: https://docs.webplatform.org/wiki/html
 [W3schools]: http://www.w3schools.com/html/
