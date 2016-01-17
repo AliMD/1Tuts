@@ -1,9 +1,9 @@
 ##WTF / HTML Fundamentals
 
-- [x] HTML Introduction
-- [x] HTML Editors
-- [x] HTML Basic Examples
-- [ ] HTML Validation
-- [ ] HTML Doctype
-- [x] HTML Elements
-- [x] HTML Attributes
+* [HTML Introduction](./HTML-Introduction.md)
+* [HTML Editors](./HTML-Editors.md)
+* [HTML Basic Examples](./HTML-Basic-Examples.md)
+* HTML Validation
+* HTML Doctype
+* [HTML Elements](./HTML-Elements.md)
+* [HTML Attributes](./HTML-Attributes.md)
