@@ -1,5 +1,5 @@
-##WTF / HTML Fundamentals
-
+##WTF HTML
+Web Technology Fundamentals / HTML
 * [HTML Introduction](./HTML-Introduction.md)
 * [HTML Editors](./HTML-Editors.md)
 * [HTML Basic Examples](./HTML-Basic-Examples.md)
