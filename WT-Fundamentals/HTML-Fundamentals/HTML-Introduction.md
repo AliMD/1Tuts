@@ -96,7 +96,7 @@ The doctype declaration is not case sensitive. All cases are acceptable:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
 
-**Note:**	All tutorials and examples at W3Schools use HTML5.
+**Note:**	All our tutorials and examples use XHTML5.1 and all future version after HTML5 use same doctype as HTML5.
 
 ##HTML Versions
 Since the early days of the web, there have been many versions of HTML:
@@ -110,10 +110,10 @@ HTML 4.01 | 1999
 XHTML | 2000
 HTML5 | 2014
 
-
-Refrences: [Mozilla], [WebPlatform], [w3schools]
+---
+Refrences: [Mozilla], [WebPlatform], [W3schools]
 
 [simple html]: http://jsbin.com/johave/embed?html,output
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
 [WebPlatform]: https://docs.webplatform.org/wiki/html
-[w3schools]: http://www.w3schools.com/html/
+[W3schools]: http://www.w3schools.com/html/
