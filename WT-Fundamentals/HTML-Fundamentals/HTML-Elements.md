@@ -32,7 +32,7 @@ This example contains 4 HTML elements:
 </body>
 </html>
 ```
-[Try It Yourself](http://jsbin.com/bujeve/edit?html,output)
+[Try It Yourself][simple html1]
 
 ##HTML Example Explained
 The `<html>` element defines the **whole document**.
@@ -86,7 +86,7 @@ Some HTML elements will display correctly, even if you forget the end tag:
 </body>
 </html>
 ```
-[Try It Yourself](http://jsbin.com/vemowo/edit?html,output)
+[Try It Yourself][simple html2]
 
 The example above works in all browsers, because the closing tag is considered optional.
 
@@ -115,4 +115,5 @@ Refrences: [Mozilla], [WebPlatform], [W3schools]
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
 [WebPlatform]: https://docs.webplatform.org/wiki/html
 [W3schools]: http://www.w3schools.com/html/
-
+[simple html1]: http://jsbin.com/bujeve/edit?html,output
+[simple html2]: http://jsbin.com/vemowo/edit?html,output
