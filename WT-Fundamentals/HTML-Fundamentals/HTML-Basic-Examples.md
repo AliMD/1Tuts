@@ -1,4 +1,4 @@
-#WTF / HTML Fundamentals / HTML Basic Examples
+#WTF HTML Basic Examples
 
 Don't worry if these examples use tags you have not learned.
 You will learn about them in the next chapters.
