@@ -10,17 +10,17 @@ finding out what is wrong, and to ensure that these pages (and any future pages 
 Validation is the answer! There are many tools available, from the W3C and other places, that allow you to validate the code on your sites.
 The most common validators you'll use are:
 
-* [link to Google!](http://google.com) A new-school validator that validates HTML5, ARIA, SVG 1.1 and MathML 2.0, it checks the entire document pointing out places
+* [Validator.nu]: A new-school validator that validates HTML5, ARIA, SVG 1.1 and MathML 2.0, it checks the entire document pointing out places
 where your markup doesn't follow that doctype correctly (i.e., where there are errors). This is the one we recommend if you are using the HTML5 doctype, also
 highly recommended.
 
-* [Validator.nu:](http://html5.validator.nu/) This looks at the (X)HTML doctype for the document you want to check, and then validates your markup accordingly.
+* [The W3C MarkUp Validator]: This looks at the (X)HTML doctype for the document you want to check, and then validates your markup accordingly.
 This is the one we recommend if you are using an HTML4 or XHTML1.x doctype. It does validate HTML5, but validator.nu is arguably more up to date.
 
-* [The W3C MarkUp Validator:](http://validator.w3.org/) This checks a document, and tests all the links to make sure they are not broken
+* [The W3C MarkUp Validator]: This checks a document, and tests all the links to make sure they are not broken
 (e.g., that the <href> values point to resources that actually exist).
 
-* [The W3C Link Checker:](http://jigsaw.w3.org/css-validator/) This checks a CSS (or HTML/CSS) document and verifies that the CSS follows the specs properly.
+* [The W3C Link Checker]: This checks a CSS (or HTML/CSS) document and verifies that the CSS follows the specs properly.
 
 In this article, we will cover how to use the second of these, demonstrating how to validate markup and interpret the typical kinds of results the validator
 gives you.
@@ -41,7 +41,7 @@ Although HTML is a declarative markup language rather than a procedural programm
 in a web page do not commonly cause the web browser to refuse to display the page. This inherent forgiveness in web browsers is one of the biggest
 reasons for the rapid adoption and spread of the web. Even if you forget to close a tag, your page will usually still display.
 
-The first web browser, [WorldWideWeb](http://www.w3.org/People/Berners-Lee/WorldWideWeb.html) (written by Tim Berners-Lee), was also an editor, allowing authors
+The first web browser, [WorldWideWeb] (written by Tim Berners-Lee), was also an editor, allowing authors
 to create web pages without learning HTML. Although this editor created invalid HTML, it established an important precedent that exists in all web browsers to this day
 — that allowing users to access content is more important than complaining about errors to people who won't understand them — or be in a position to fix them.
 
@@ -57,7 +57,7 @@ been broken
 There is a common feeling among some web developers that if a web page looks fine in browsers, it doesn't matter if it doesn't validate
 (often stated as, "In function there is beauty"). They describe validation as an ideal goal, but not something that is a black-and-white issue.
 
-There is some wisdom in this attitude. The HTML4 specification is not perfect, and some things that were arguably correct — such as [such as starting an ordered list with a number other than 1](http://www.w3.org/wiki/HTML_lists#Beginning_ordered_lists_with_numbers_other_than_1)list with
+There is some wisdom in this attitude. The HTML4 specification is not perfect, and some things that were arguably correct — such as [such as starting an ordered list with a number other than 1] list with
 — were invalid HTML. HTML5 fixes quite a lot of spec issues, including this one, but you may still run into situations where validation may need to
 be broken in order to render the page as you want. As the saying goes, Learn the rules so you know how to break them properly
 
@@ -107,7 +107,7 @@ they interpret it in very different ways:
 * Firefox adds extra **bold** elements between the paragraphs, which were not present in the markup.  
 * Internet Explorer puts the text "This text should be a link" outside the **anchor** tag that creates the link.
 
-This original version of this example can be found in Hallvord Steen's article [Same DOM errors, different browser interpretations](http://blog.teamtreehouse.com/same-dom-errors-different-browser-interpretations)
+This original version of this example can be found in Hallvord Steen's article [Same DOM errors, different browser interpretations]
 — read this for a deeper treatment of HTML errors, as well as some information about debugging tools.
 
 None of the different browsers' behaviors is incorrect; they're all trying to fill in the gaps of your incorrect code,
@@ -155,7 +155,7 @@ The example we'll be looking at in this section is below; feel free to copy and 
   using the W3C HTML validator.
   
 ##The W3C HTML validator
-Open the [W3C online validator](http://validator.w3.org/) in a new tab or window, so that you can switch between the validator and this article as you go
+Open the [W3C online validator] in a new tab or window, so that you can switch between the validator and this article as you go
 through the example.
 (You can also validate pages in the W3C validator directly from the Opera browser by right/Ctrl-clicking and selecting the "Validate" option.)
 
@@ -222,25 +222,40 @@ and remember what doctype your page is being validated against.
 
 ##See also
 ####External resources
-[Opera Dragonfly (built into Opera)](http://www.opera.com/dragonfly/) 
+[Opera Dragonfly (built into Opera)]
 
-[General validation bookmarklet](https://www.squarefree.com/bookmarklets/validation.html)
+[General validation bookmarklet]
 
-[The Firefox web developer toolbar extension](http://chrispederick.com/work/web-developer/)
+[The Firefox web developer toolbar extension]
 
-[The IE developer toolbar](http://www.microsoft.com/downloads/details.aspx?FamilyID=e59c3964-672d-4511-bb3e-2d5e1db91038&displaylang=en)
+[The IE developer toolbar]
 
-[Safari tidy](http://zappatic.net/safaritidy/)
+[Safari tidy]
 
-[HTML tidy](http://tidy.sourceforge.net/)
+[HTML tidy]
 
 ####Exercise questions
 * What happens when a browser parses invalid HTML?  
 * What is the problem with this?  
 * Will using a frameset in a document validated against the HTML 4 Strict doctype generate an error?  
 
+---
 Refrences: [Mozilla], [WebPlatform], [W3schools]
 
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
 [WebPlatform]: https://docs.webplatform.org/wiki/html
 [W3schools]: http://www.w3schools.com/html/
+[Validator.nu]: http://html5.validator.nu/
+[The W3C MarkUp Validator]: http://html5.validator.nu/
+[The W3C MarkUp Validator]: http://validator.w3.org/
+[The W3C Link Checker]: http://jigsaw.w3.org/css-validator
+[WorldWideWeb]: http://www.w3.org/People/Berners-Lee/WorldWideWeb.html
+[such as starting an ordered list with a number other than 1]: http://www.w3.org/wiki/HTML_lists#Beginning_ordered_lists_with_numbers_other_than_1
+[Same DOM errors, different browser interpretations]: http://blog.teamtreehouse.com/same-dom-errors-different-browser-interpretations
+[W3C online validator]: http://validator.w3.org/
+[Opera Dragonfly (built into Opera)]: http://www.opera.com/dragonfly/
+[General validation bookmarklet]: https://www.squarefree.com/bookmarklets/validation.html
+[The Firefox web developer toolbar extension]: http://chrispederick.com/work/web-developer/
+[The IE developer toolbar]: http://www.microsoft.com/downloads/details.aspx?FamilyID=e59c3964-672d-4511-bb3e-2d5e1db91038&displaylang=en
+[Safari tidy]: http://zappatic.net/safaritidy/
+[HTML tidy]: http://tidy.sourceforge.net/
