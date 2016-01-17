@@ -84,26 +84,6 @@ In terms of what syntax style you should use, pick something you are comfortable
 
 That last rule is very important. If you don't properly nest your tags, your HTML will not be well formed, and CSS and JavaScript may not work reliably, as they rely on having a well-formed Document Object Model (DOM). For more on the HTML DOM, see [Growing trees][Growing trees].
   
-####A note for teachers
-Teachers often wonder what style they should teach beginning coders, and what doctype they should recommend. Although the HTML5 doctype is far simpler than the others, it allows you to use loose HTML style syntax, and so validating against the HTML5 doctype won't pick up markup that would be considered erroneous in XHTML. This is a shame, as strict XHTML syntax is a good style to teach beginners. So what should you do?
-
-Well, the whole point of HTML5 having loose syntax is that much of it really doesn't actually matter in terms of how a page renders in a browser. HTML5 reflects more what web developers have actually done historically, rather than what the W3C thinks they should be doing now. Thus, you don't really need to stick to most of these rules; you can go forward with HTML5 using whatever syntax style you are used to. But when teaching newcomers, you need to recommend a style for them to use. The best combination is probably to use the HTML5 doctype, but to stick to the XHTML strict rules.
-
-Below are some common remarks about HTML5's relaxed requirements and some reasoned "yes, but" responses.
-* "HTML5 doesn't need closing tags." Yes, but you really should include them to make sure an unambiguous DOM is formed, which gives you the results you expect when you apply CSS and JavaScript to your HTML.
-
-* "HTML5 doesn't need trailing slashes for empty tags." Yes, but you should include them for readability.
-
-* "HTML5 is case insensitive." Yes, but you should absolutely stick to a consistent case style, because it can create confusion when students collaborate on projects. It can also create syntax errors; for example, if a student uses mixed case in file paths. Unix servers are case sensitive, while Windows servers are not. Also, your students won't always be working with HTML5 in the real world; they may come across pages that use HTML4 strict, or XHTML 1.0 transitional. Using XHTML syntax rules ensures that your HTML will work pretty much anywhere, regardless of doctype and style.
-
-* "HTML5 doesn't require `<html>`, `<head>`, and `<body>` elements." Yes, but these elements are part of general best practice that coders should adhere to. Including `<head>` and `<body>` breaks up the code naturally into distinct areas, making it more readable. And including the `<html>` tag is important for other reasons such as JavaScript events and accessibility. You should also include a **lang** attribute to indicate the document's primary language, as a common best practice.
-
-* "HTML5 allows stray text (not in a container)." Yes, but this is a very bad practice; it will likely result in a malformed DOM and subsequent display, CSS, and JavaScript errors.
-
-* "HTML5 allows attribute values without quotes." Yes, but sometimes this breaks down, like when you have a **class** attribute containing two class names, like `<div class=one two>`. This would probably confuse the browser, causing it to treat **two** as a new attribute. Better to quote the values like this `<div class="one two"></div>` and avoid the problem.
-
-Validating HTML5 for XHTML style syntax can be a bit of a pain. As a suggestion, you could use [http://validator.w3.org][w3c html validator], but set the doctype to "XHTML 1.0" instead of "detect automatically". This will validate your HTML5 document as XHTML 1.0, giving you more accurate and appropriate error messages. Of course, it will also give you error messages for the HTML5 elements, because they are undefined in XHTML 1.0.
-
 ##Serving "real" XML
 You may also be interested to know that most of the XHTML on the Web is actually HTML written with well-formed XML syntax. Even if the doctype is an XHTML one, it will be sent to the client as HTML unless you:
 * save the file with an **.xhtml** file extension, or
