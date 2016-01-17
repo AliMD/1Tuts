@@ -46,7 +46,7 @@ ANSI encoding covers US and Western European characters only.
 
 ![Image of Notepad2](http://www.w3schools.com/html/img_saveas.png)
 
-:sparkles: You can use either .htm or .html as file extension. There is no difference, we use html.
+:sparkles: You can use either .htm or .html as file extension. There is no difference, but we use html.
 
 ##Step 4: View HTML Page in Your Browser  
 Open the saved HTML file in your favorite browser. The result will look much like this:  
