@@ -1,7 +1,11 @@
 #WTF HTML Editors
 
 ##Write HTML Using Notepad or TextEdit
-HTML can be edited by using professional HTML editors like: [Sublime Text], [Atom], [WebStorm]  
+HTML can be edited by using professional HTML editors like:
+* [Atom]
+* [Sublime Text]
+* [WebStorm]
+
 However, for learning HTML we recommend a text editor like Notepad (PC) or TextEdit (Mac) or VIM (Linux/Mac).  
 We believe using a simple text editor is a good way to learn HTML.  
 Follow the 4 steps below to create your first web page with Notepad.  
