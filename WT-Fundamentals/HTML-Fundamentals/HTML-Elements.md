@@ -21,18 +21,25 @@ Start tag	| Element content |	End tag
 
 ##Nested HTML Elements
 HTML elements can be nested (elements can contain elements).
+
 All HTML documents consist of nested HTML elements.
-This example contains 4 HTML elements:
+
+This example contains 5 HTML elements:
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+</head>
+
 <body>
   <h1>My First Heading</h1>
   <p>My first paragraph.</p>
 </body>
+
 </html>
 ```
-[Try It Yourself](http://jsbin.com/bujeve/edit?html,output)
+[Try It Yourself][nested html]
 
 ##HTML Example Explained
 The `<html>` element defines the **whole document**.
@@ -79,14 +86,20 @@ The element **content** is: My first paragraph.
 ##Don't Forget the End Tag
 Some HTML elements will display correctly, even if you forget the end tag:
 ```html
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
 <body>
   <p>This is a paragraph
   <p>This is a paragraph
 </body>
+
 </html>
 ```
-[Try It Yourself](http://jsbin.com/vemowo/edit?html,output)
+[Try It Yourself][forget end tag]
 
 The example above works in all browsers, because the closing tag is considered optional.
 
@@ -107,3 +120,12 @@ HTML tags are not case sensitive: `<P>` means the same as `<p>`.
 The HTML5 standard does not require lowercase tags, but W3C **recommends** lowercase in HTML4, and **demands** lowercase for stricter document types like XHTML.
 
 **Note:**	At W3Schools we always use lowercase tags.
+
+---
+Refrences: [Mozilla], [WebPlatform], [W3schools]
+
+[nested html]: http://example.com
+[forget end tag]: http://example.com
+[Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
+[WebPlatform]: https://docs.webplatform.org/wiki/html
+[W3schools]: http://www.w3schools.com/html/
