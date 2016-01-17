@@ -118,6 +118,11 @@ Therefore you should just stick to serving documents as HTML5, not proper XHTML.
 ##Conclusion
 The HTML5 doctype is not only simpler than previous versions, but it buys you the most flexibility in coding style. That said, do not take that as an excuse to write overly loose code; follow best practices in general and XHTML 1.0 coding rules in particular, and you will have the best of both worlds.
 
+---
+Refrences: [Mozilla], [WebPlatform], [W3schools]
 
 [w3c html validator]: http://validator.w3.org/
 [Growing trees]: http://www.w3.org/wiki/Traversing_the_DOM#Growing_trees
+[Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
+[WebPlatform]: https://docs.webplatform.org/wiki/html
+[W3schools]: http://www.w3schools.com/html/
