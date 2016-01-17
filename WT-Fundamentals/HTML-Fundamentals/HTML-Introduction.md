@@ -1,4 +1,4 @@
-#WTF / HTML Fundamentals / Introduction
+#WTF HTML Introduction
 
 ##What is HTML?
 HTML is a **markup** language for **describing** web documents (web pages).
