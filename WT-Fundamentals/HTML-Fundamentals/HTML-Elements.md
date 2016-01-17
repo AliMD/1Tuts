@@ -108,6 +108,7 @@ The HTML5 standard does not require lowercase tags, but W3C **recommends** lower
 
 **Note:**	At W3Schools we always use lowercase tags.
 
+---
 Refrences: [Mozilla], [WebPlatform], [W3schools]
 
 [simple html]: http://jsbin.com/johave/embed?html,output
