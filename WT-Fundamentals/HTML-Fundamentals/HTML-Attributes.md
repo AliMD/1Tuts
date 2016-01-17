@@ -36,7 +36,7 @@ In this example, the ```<p>``` element has a **title** attribute. The value of t
 any content that you like to write...
 </p>
 ```
-<a class="jsbin-embed" href="http://jsbin.com/purayu/embed?html,output">Try it Yourself</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+[simple html]: http://jsbin.com/johave/embed?html,output
 
 :sparkles: 	When you move the mouse over the element, the title will be displayed as a tooltip.
 
@@ -123,4 +123,12 @@ Or vice versa:
 ##HTML Attributes
 Below is an alphabetical list of some attributes often used in HTML:
 ![Image of attributes](http://i.imgsafe.org/a882be5.jpg)
-A complete list of all attributes for each HTML element, is listed in our: [HTML Tag Reference](http://www.w3schools.com/tags/default.asp).
+A complete list of all attributes for each HTML element, is listed in our: [HTML Tag Reference]
+
+---
+Refrences: [Mozilla], [WebPlatform], [W3schools]
+
+[Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
+[WebPlatform]: https://docs.webplatform.org/wiki/html
+[W3schools]: http://www.w3schools.com/html/
+[HTML Tag Reference]: http://www.w3schools.com/tags/default.asp
