@@ -75,7 +75,7 @@ Refrences: [Mozilla], [WebPlatform], [W3schools]
 
 [body sample]: http://atom.io/
 [h1 tags]: http://www.sublimetext.com/
-[p tags]: http://www.sublimetext.com/
+[p tag]: http://www.sublimetext.com/
 [a tag]: http://www.sublimetext.com/
 [img tag]: http://www.sublimetext.com/
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
