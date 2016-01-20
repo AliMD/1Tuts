@@ -149,3 +149,4 @@ Refrences: [Mozilla], [WebPlatform], [W3schools]
 [Mozilla]: http://developer.mozilla.org/en-US/docs/Web/HTML
 [WebPlatform]: https://docs.webplatform.org/wiki/html
 [W3schools]: http://www.w3schools.com/html/
+[HTML Tag Reference]: https://docs.webplatform.org/wiki/html/elements

@@ -47,7 +47,7 @@ HTML paragraphs are defined with the `<p>` tag:
 HTML links are defined with the `<a>` tag:
 ###Example
 ```html
-<a href="http://www.w3schools.com">This is a link</a>
+<a href="http://google.com">This is a link</a>
 ```
 [Try it Yourself][a tag]
 
@@ -59,7 +59,7 @@ HTML images are defined with the `<img>` tag.
 The source file (**src**), alternative text (**alt**), and size (**width** and **height**) are provided as **attributes**:
 ###Example
 ```html
-<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Image" width="254" height="142" />
 ```
 [Try it Yourself][img tag]
 
