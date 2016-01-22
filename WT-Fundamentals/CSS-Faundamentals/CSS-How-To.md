@@ -20,7 +20,7 @@ With an external style sheet, you can change the look of an entire website by ch
 
 Each page must include a reference to the external style sheet file inside the `<link>` element. The `<link>`element goes inside the `<head>` section:
 
-[Add CSS link To HTML][Add CSS link To HTML]
+[Try it Yourself][Add CSS link To HTML]
 
 An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension.
 
@@ -46,7 +46,7 @@ An internal style sheet may be used if one single page has a unique style.
 
 Internal styles are defined within the `<style>` element, inside the `<head>` section of an HTML page:
 
-[Internal CSS][Internal CSS]
+[Try it Yourself][Internal CSS]
 
 <hr />
 
@@ -58,7 +58,7 @@ To use inline styles, add the style attribute to the relevant element. The style
 
 The example below shows how to change the color and the left margin of a `<h1>` element:
 
-[Inline CSS][Inline CSS]
+[Try it Yourself][Inline CSS]
 
 
 ##### :bulb: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly!
@@ -86,11 +86,11 @@ h1 {
 ```
 If the internal style is defined after the link to the external style sheet, the `<h1>` elements will be "orange":
 
-[Multiple CSS][Multiple CSS]
+[Try it Yourself][Multiple CSS]
 
 However, if the internal style is defined before the link to the external style sheet, the `<h1>` elements will be "navy":
 
-[Multiple CSS 2][Multiple CSS 2]
+[Try it Yourself][Multiple CSS 2]
 
 <hr />
 
@@ -105,7 +105,7 @@ Generally speaking we can say that all the styles will "cascade" into a new "vir
 	1. Browser default
 So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.
 
-[CSS Priority][CSS Priority]
+[Try it Yourself][CSS Priority]
 
 #### [:arrow_backward: Previous](./CSS-Syntax.md) | [Next Chapter :arrow_forward:](./CSS-Backgrounds.md)
 
