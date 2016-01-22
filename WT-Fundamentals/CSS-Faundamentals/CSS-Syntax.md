@@ -130,6 +130,7 @@ comment */
 ```
 [Try It Yourself][simple css7]
 
+#### [Privious :arrow_backward:](./CSS-Introduction.md) | #### [Next Chapter :arrow_forward:](./CSS-How-To.md)
 ---
 Refrences: [W3schools]
 
