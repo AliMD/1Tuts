@@ -107,7 +107,7 @@ So, an inline style (inside a specific HTML element) has the highest priority, w
 
 [CSS Priority][CSS Priority]
 
-#### [:arrow_backward: Previos](./CSS-Syntax.md) | [Next Chapter :arrow_forward:](./CSS-Backgrounds.md)
+#### [:arrow_backward: Previous](./CSS-Syntax.md) | [Next Chapter :arrow_forward:](./CSS-Backgrounds.md)
 
 
 [Add CSS link To HTML]: http://jsbin.com/yefovu/embed?html,output
