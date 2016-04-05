@@ -1,9 +1,9 @@
 # HTML Quotation
 
-## HTML <q> for Short Quotations
+## HTML `<q>` for Short Quotations
 
-The HTML **<q>** element defines a short quotation.  
-Browsers usually insert quotation marks around the <q> element.  
+The HTML **`<q>`** element defines a short quotation.  
+Browsers usually insert quotation marks around the `<q>` element.  
 
 ```html
 <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
