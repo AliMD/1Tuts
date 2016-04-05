@@ -10,7 +10,7 @@ Browsers usually insert quotation marks around the `<q>` element.
 ```
 [Try it YourSelf](http://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_q)  
 
-## HTML <blockquote> for Long Quotations
+## HTML `<blockquote>` for Long Quotations
 ...
 
 
